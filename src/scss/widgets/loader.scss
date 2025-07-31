@@ -5,8 +5,8 @@
   z-index: 9999;
 
   transition:
-    opacity 0.5s ease,
-    visibility 0.5s ease;
+    opacity 1s ease,
+    visibility 1s ease;
 
   &__container {
     position: relative;
@@ -20,8 +20,8 @@
     right: 10vw;
     width: 67vw;
     transition:
-      opacity 2s ease,
-      top 2s ease;
+      opacity 3s ease,
+      top 3s ease;
     @include laptop-min {
       top: -100px;
       right: -20px;
@@ -38,8 +38,8 @@
     left: -5vw;
     width: 95vw;
     transition:
-      opacity 2s ease,
-      left 2s ease;
+      opacity 3s ease,
+      left 3s ease;
     @include laptop-min {
       width: 950px;
       top: 100px;
@@ -53,8 +53,8 @@
     top: 5vw;
     transform: rotate(-10deg);
     transition:
-      opacity 2s ease,
-      right 2s ease;
+      opacity 3s ease,
+      right 3s ease;
     @include laptop-min {
       width: 950px;
       right: -100px;

@@ -24,7 +24,7 @@ export default function loader() {
           setTimeout(() => {
             loader.remove();
           }, 500);
-        }, 1800);
+        }, 2100);
       }, 300);
     });
   }
