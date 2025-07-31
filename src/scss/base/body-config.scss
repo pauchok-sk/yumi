@@ -1,0 +1,9 @@
+.body-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+.body {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark);
+  background-color: var(--white);
+}
