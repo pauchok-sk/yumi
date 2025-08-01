@@ -6,6 +6,7 @@ export default function loader() {
       const cloudT = loader.querySelector(".loader__cloud-t");
       const cloudBl = loader.querySelector(".loader__cloud-bl");
       const cloudBr = loader.querySelector(".loader__cloud-br");
+      const logo = loader.querySelector(".loader__logo")
 
       setTimeout(() => {
         cloudT.style.opacity = 0;
@@ -16,6 +17,8 @@ export default function loader() {
 
         cloudBr.style.opacity = 0;
         cloudBr.style.right = "-100%";
+
+        logo.style.opacity = 0;
 
         setTimeout(() => {
           loader.style.opacity = 0;

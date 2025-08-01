@@ -10,13 +10,20 @@
 // ui
 @import "./ui/button";
 @import "./ui/list";
+@import "./ui/slider";
+@import "./ui/title";
 
 // widgets
 @import "./widgets/loader";
+@import "./widgets/burger";
+@import "./widgets/services";
 
 // components
 @import "./components/header";
 
-
+@import "./components/intro";
+@import "./components/s-about";
+@import "./components/s-why";
+@import "./components/s-services";
 
 @import "./components/footer";

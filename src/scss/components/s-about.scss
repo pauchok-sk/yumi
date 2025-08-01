@@ -1,0 +1,51 @@
+.s-about {
+  overflow: hidden;
+  &__head {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__title {
+  }
+  &__content {
+  }
+  &__slider {
+    overflow: visible !important;
+  }
+  &__slide {
+    width: fit-content !important;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 500px;
+    outline: none;
+
+    &._tr {
+      border-top-right-radius: 200px;
+    }
+    &._br {
+      border-bottom-right-radius: 200px;
+    }
+    &._tl {
+      border-top-left-radius: 200px;
+    }
+    &._bl {
+      border-bottom-left-radius: 200px;
+    }
+
+    transition: border-radius .5s ease;
+    @include hover {
+      border-radius: 20px !important;
+
+      img {
+        transform: scale(1.07);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+  }
+}

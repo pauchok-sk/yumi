@@ -1,0 +1,97 @@
+.intro {
+  position: relative;
+
+  .slider-btn {
+    &._prev {
+      left: 10px;
+    }
+    &._next {
+      right: 10px;
+    }
+  }
+  &__slider {
+    width: 100%;
+  }
+  &__slide {
+    position: relative;
+    display: flex !important;
+    align-items: flex-end;
+    padding: 150px 0px 100px 0px;
+    box-sizing: border-box;
+    color: var(--white);
+    min-height: 100vh;
+    z-index: 1;
+
+    @include laptop-min {
+      padding: 110px 0px 60px 0px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      inset: 0;
+      z-index: -1;
+    }
+    &::before {
+      background-color: rgba(248, 247, 245, 0.2);
+    }
+    &::after {
+      background-color: rgba(31, 23, 15, 0.4);
+    }
+  }
+  &__slide-wrapper {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 30px;
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__slide-info {
+    flex: 0 1 700px;
+    @include tablet {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__slide-content {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+    @include laptop-middle {
+      font-size: 18px;
+    }
+  }
+  &__slide-title {
+    font-family: "Ysabeau", sans-serif;
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 90%;
+    text-transform: uppercase;
+    margin: 0;
+    @include laptop-middle {
+      font-size: 100px
+    }
+    @include laptop-min {
+      font-size: 82px;
+    }
+    @include tablet {
+      font-size: 74px;
+    }
+    @include tablet-min {
+      font-size: 62px;
+    }
+  }
+  &__slide-btn {
+    flex-shrink: 0;
+  }
+  &__slider-pagination {
+    position: absolute;
+    bottom: 30px !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 10;
+  }
+}

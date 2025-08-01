@@ -7,3 +7,53 @@
   color: var(--dark);
   background-color: var(--white);
 }
+
+.sect-m {
+  margin: 140px 0px;
+  @include laptop-middle {
+    margin: 120px 0px;
+  }
+  @include laptop-min {
+    margin: 100px 0px;
+  }
+  @include tablet {
+    margin: 80px 0px;
+  }
+  @include tablet-min {
+    margin: 60px 0px;
+  }
+}
+.sect-p {
+  padding: 140px 0px;
+  @include laptop-middle {
+    padding: 120px 0px;
+  }
+  @include laptop-min {
+    padding: 100px 0px;
+  }
+  @include tablet {
+    padding: 80px 0px;
+  }
+  @include tablet-min {
+    padding: 60px 0px;
+  }
+}
+
+.sect-head {
+  margin-bottom: 70px;
+  @include laptop-middle {
+    margin-bottom: 50px;
+  }
+  @include laptop-min {
+    margin-bottom: 40px;
+  }
+  @include tablet {
+    margin-bottom: 30px;
+  }
+  .s-title {
+    margin-bottom: 50px !important;
+    @include tablet {
+      margin-bottom: 25px !important;
+    }
+  }
+}

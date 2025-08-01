@@ -8,26 +8,322 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap&_v=20250731120246" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20250731120246" />
+	<link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap&_v=20250801122310" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250801122310">
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250801122310">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250801122310" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body class="body">
-	<header class="header">
-		<div class="container">
-
+	<header class="header _fixed">
+		<div class="header__body">
+			<nav class="header__nav">
+				<a href="#" class="btn-simple" id="services-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-services"></use>
+					</svg>
+					<span>Услуги</span>
+				</a>
+				<ul class="list header__list">
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="header__contacts">
+				<a href="#" class="btn-simple header__btn-anket">Заполнить анкету</a>
+				<div class="header__social">
+					<a href="#" target="_blank" class="header__social-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+						</svg>
+					</a>
+					<a href="#" target="_blank" class="header__social-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="header__contacts-main">
+					<a href="tel:+79033073311" class="header__tel">+7 (903) 307-33-11</a>
+					<div class="header__address">г. Казань, ул. Спартаковская, 14</div>
+				</div>
+			</div>
+			<div class="header__burger-btn" id="burger-open">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 		</div>
 	</header>
-	<div class="loader" style="background: url('img/loader-img.jpg') center / cover no-repeat;">
-		<div class="loader__container">
-			<img src="img/cloud-top.png" alt="cloud" class="loader__cloud-t">
-			<img src="img/cloud-bottom.png" alt="cloud" class="loader__cloud-bl">
-			<img src="img/cloud-bottom.png" alt="cloud" class="loader__cloud-br">
-			<img src="img/logo-loader.svg" alt="logo" class="loader__logo">
+
+	<div class="burger-overlay" id="burger-overlay"></div>
+	<div class="burger" id="burger">
+		<div class="burger__head">
+			<a href="/" class="burger__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="burger__close" id="burger-close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+		</div>
+		<ul class="list burger__list">
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Прайс-лист</a></li>
+			<li><a href="#">Акции</a></li>
+			<li><a href="#">О нас</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<div class="burger__contacts">
+			<a href="#" class="btn-simple burger__btn-anket _dark">Заполнить анкету</a>
+			<div class="burger__social">
+				<a href="#" target="_blank" class="burger__social-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+					</svg>
+				</a>
+				<a href="#" target="_blank" class="burger__social-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="burger__contacts-main">
+				<a href="tel:+79033073311" class="burger__tel">+7 (903) 307-33-11</a>
+				<div class="burger__address">г. Казань, ул. Спартаковская, 14</div>
+			</div>
 		</div>
 	</div>
+
+	<div class="services-overlay" id="services-overlay"></div>
+	<div class="services" id="services">
+		<div class="services__wrapper">
+			<div class="services__container">
+				<div class="services__item">
+					<h5 class="services__title">Для женщин</h5>
+					<ul class="list services__list">
+						<li><a href="#">Лимфодренажный массаж</a></li>
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+						<li><a href="#">Perfect body</a></li>
+						<li><a href="#">Коррекция фигуры</a></li>
+					</ul>
+				</div>
+				<div class="services__item">
+					<h5 class="services__title">Для мужчин</h5>
+					<ul class="list services__list">
+						<li><a href="#">Лимфодренажный массаж</a></li>
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+						<li><a href="#">Коррекция фигуры</a></li>
+					</ul>
+				</div>
+				<div class="services__item">
+					<h5 class="services__title">Для детей</h5>
+					<ul class="list services__list">
+						<li><a href="#">Лимфодренажный массаж</a></li>
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+					</ul>
+				</div>
+				<div class="services__item">
+					<h5 class="services__title">Для двоих</h5>
+					<ul class="list services__list">
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+						<li><a href="#">Perfect body</a></li>
+						<li><a href="#">Коррекция фигуры</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<main>
+
+		<section class="intro">
+			<div class="slider-btn _prev">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+				</svg>
+			</div>
+			<div class="slider-btn _next">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+				</svg>
+			</div>
+			<div class="intro__slider swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide intro__slide" style="
+          background: url(&quot;img/loader-img.jpg&quot;) 0 0 / cover no-repeat;
+        ">
+						<div class="container">
+							<div class="intro__slide-wrapper">
+								<div class="intro__slide-info">
+									<p class="intro__slide-content">
+										Сложно сказать, почему элементы политического процесса могут
+										быть заблокированы в рамках своих собственных рациональных
+										ограничений.
+									</p>
+									<h2 class="intro__slide-title">Yumi</h2>
+								</div>
+								<a href="#" class="btn-circle intro__slide-btn">Выбрать услугу</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide intro__slide" style="
+          background: url(&quot;img/loader-img.jpg&quot;) 0 0 / cover no-repeat;
+        ">
+						<div class="container">
+							<div class="intro__slide-wrapper">
+								<div class="intro__slide-info">
+									<p class="intro__slide-content">
+										Сложно сказать, почему элементы политического процесса могут
+										быть заблокированы в рамках своих собственных рациональных
+										ограничений. 222
+									</p>
+									<h2 class="intro__slide-title">Yumi 222</h2>
+								</div>
+								<a href="#" class="btn-circle intro__slide-btn">Выбрать услугу</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide intro__slide" style="
+          background: url(&quot;img/loader-img.jpg&quot;) 0 0 / cover no-repeat;
+        ">
+						<div class="container">
+							<div class="intro__slide-wrapper">
+								<div class="intro__slide-info">
+									<p class="intro__slide-content">
+										Сложно сказать, почему элементы политического процесса могут
+										быть заблокированы в рамках своих собственных рациональных
+										ограничений.
+									</p>
+									<h2 class="intro__slide-title">Yumi</h2>
+								</div>
+								<a href="#" class="btn-circle intro__slide-btn">Выбрать услугу</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide intro__slide" style="
+          background: url(&quot;img/loader-img.jpg&quot;) 0 0 / cover no-repeat;
+        ">
+						<div class="container">
+							<div class="intro__slide-wrapper">
+								<div class="intro__slide-info">
+									<p class="intro__slide-content">
+										Сложно сказать, почему элементы политического процесса могут
+										быть заблокированы в рамках своих собственных рациональных
+										ограничений. 222
+									</p>
+									<h2 class="intro__slide-title">Yumi 222</h2>
+								</div>
+								<a href="#" class="btn-circle intro__slide-btn">Выбрать услугу</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-pagination intro__slider-pagination"></div>
+		</section>
+
+		<section class="s-about sect-m">
+			<div class="container">
+				<div class="s-about__head sect-head">
+					<h2 class="s-title s-about__title">
+						Yumi spa - спа-салон премиум-класса в Казани
+					</h2>
+					<p class="s-about__content">
+						Погрузитесь в мир безмятежности с нашими спа-программами, где каждая
+						процедура для лица, волос и тела – это симфония чувственного
+						наслаждения. Путешествие начинается с ароматерапии, сотканной из
+						тончайших нитей натуральных масел, и умиротворяющего акустического фона.
+						Затем, словно ласковое прикосновение ветра, следует мягкий, но глубокий
+						массаж головы, шеи и плеч. Под чуткими руками мастера пробуждаются
+						ключевые точки и меридианы, оживляется лимфоток, и кровь начинает свой
+						животворный танец.
+					</p>
+				</div>
+				<div class="s-about__slider-wrapper">
+					<div class="swiper s-about__slider">
+						<div class="swiper-wrapper">
+							<a href="img/about.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _tr">
+								<img src="img/about.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _br">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _bl">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+							<a href="img/about.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _tl">
+								<img src="img/about.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-p s-why" style="background: url('img/why-bg.png') center / cover no-repeat;">
+			<div class="container">
+				<h2 class="s-title s-why__title">
+					Почему
+					<br />
+					выбирают нас
+				</h2>
+				<div class="s-why__grid">
+					<article class="s-why__item">
+						<img src="img/why-icon.png" alt="icon" class="s-why__item-icon" />
+						<h5 class="s-why__item-title">Премиум обслуживание</h5>
+						<p class="s-why__item-content">
+							Повседневная практика показывает, что граница обучения кадров влечет
+							за собой процесс внедрения и модернизации первоочередных требований.
+						</p>
+					</article>
+					<article class="s-why__item">
+						<img src="img/why-icon.png" alt="icon" class="s-why__item-icon" />
+						<h5 class="s-why__item-title">Премиум обслуживание</h5>
+						<p class="s-why__item-content">
+							Повседневная практика показывает, что граница обучения кадров влечет
+							за собой процесс внедрения
+						</p>
+					</article>
+					<article class="s-why__item">
+						<img src="img/why-icon.png" alt="icon" class="s-why__item-icon" />
+						<h5 class="s-why__item-title">Премиум обслуживание</h5>
+						<p class="s-why__item-content">
+							Повседневная практика показывает, что граница обучения кадров влечет
+							за собой процесс внедрения и модернизации первоочередных требований.
+						</p>
+					</article>
+					<article class="s-why__item">
+						<img src="img/why-icon.png" alt="icon" class="s-why__item-icon" />
+						<h5 class="s-why__item-title">Премиум обслуживание</h5>
+						<p class="s-why__item-content">
+							Повседневная практика показывает, что граница обучения кадров влечет
+							за собой процесс внедрения и модернизации первоочередных требований.
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
 
 
 	</main>
@@ -35,7 +331,10 @@
 		<div class="container">
 		</div>
 	</footer>
-	<script src="js/app.min.js?_v=20250731120246"></script>
+
+	<script src="./files/swiper/swiper.min.js?_v=20250801122310"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20250801122310"></script>
+	<script src="js/app.min.js?_v=20250801122310"></script>
 </body>
 
 </html>

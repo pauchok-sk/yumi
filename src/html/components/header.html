@@ -1,5 +1,131 @@
-<header class="header">
-	<div class="container">
-
-	</div>
+<header class="header _fixed">
+  <div class="header__body">
+    <nav class="header__nav">
+      <a href="#" class="btn-simple" id="services-btn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-services"></use>
+        </svg>
+        <span>Услуги</span>
+      </a>
+      <ul class="list header__list">
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Прайс-лист</a></li>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <a href="/" class="header__logo">
+      <img src="@img/logo.svg" alt="logo" />
+    </a>
+    <div class="header__contacts">
+      <a href="#" class="btn-simple header__btn-anket">Заполнить анкету</a>
+      <div class="header__social">
+        <a href="#" target="_blank" class="header__social-btn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-tg"></use>
+          </svg>
+        </a>
+        <a href="#" target="_blank" class="header__social-btn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-wh"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="header__contacts-main">
+        <a href="tel:+79033073311" class="header__tel">+7 (903) 307-33-11</a>
+        <div class="header__address">г. Казань, ул. Спартаковская, 14</div>
+      </div>
+    </div>
+    <div class="header__burger-btn" id="burger-open">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 </header>
+
+<div class="burger-overlay" id="burger-overlay"></div>
+<div class="burger" id="burger">
+  <div class="burger__head">
+    <a href="/" class="burger__logo">
+      <img src="@img/logo.svg" alt="logo" />
+    </a>
+    <div class="burger__close" id="burger-close">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#icon-close"></use>
+      </svg>
+    </div>
+  </div>
+  <ul class="list burger__list">
+    <li><a href="#">Услуги</a></li>
+    <li><a href="#">Каталог</a></li>
+    <li><a href="#">Прайс-лист</a></li>
+    <li><a href="#">Акции</a></li>
+    <li><a href="#">О нас</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+  <div class="burger__contacts">
+    <a href="#" class="btn-simple burger__btn-anket _dark">Заполнить анкету</a>
+    <div class="burger__social">
+      <a href="#" target="_blank" class="burger__social-btn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-tg"></use>
+        </svg>
+      </a>
+      <a href="#" target="_blank" class="burger__social-btn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-wh"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="burger__contacts-main">
+      <a href="tel:+79033073311" class="burger__tel">+7 (903) 307-33-11</a>
+      <div class="burger__address">г. Казань, ул. Спартаковская, 14</div>
+    </div>
+  </div>
+</div>
+
+<div class="services-overlay" id="services-overlay"></div>
+<div class="services" id="services">
+  <div class="services__wrapper">
+    <div class="services__container">
+      <div class="services__item">
+        <h5 class="services__title">Для женщин</h5>
+        <ul class="list services__list">
+          <li><a href="#">Лимфодренажный массаж</a></li>
+          <li><a href="#">Массаж всего тела</a></li>
+          <li><a href="#">Soft skin</a></li>
+          <li><a href="#">Perfect body</a></li>
+          <li><a href="#">Коррекция фигуры</a></li>
+        </ul>
+      </div>
+      <div class="services__item">
+        <h5 class="services__title">Для мужчин</h5>
+        <ul class="list services__list">
+          <li><a href="#">Лимфодренажный массаж</a></li>
+          <li><a href="#">Массаж всего тела</a></li>
+          <li><a href="#">Soft skin</a></li>
+          <li><a href="#">Коррекция фигуры</a></li>
+        </ul>
+      </div>
+      <div class="services__item">
+        <h5 class="services__title">Для детей</h5>
+        <ul class="list services__list">
+          <li><a href="#">Лимфодренажный массаж</a></li>
+          <li><a href="#">Массаж всего тела</a></li>
+          <li><a href="#">Soft skin</a></li>
+        </ul>
+      </div>
+      <div class="services__item">
+        <h5 class="services__title">Для двоих</h5>
+        <ul class="list services__list">
+          <li><a href="#">Массаж всего тела</a></li>
+          <li><a href="#">Soft skin</a></li>
+          <li><a href="#">Perfect body</a></li>
+          <li><a href="#">Коррекция фигуры</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

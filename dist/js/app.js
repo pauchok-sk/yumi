@@ -1,11 +1,46 @@
 (() => {
     "use strict";
+    function burger() {
+        const burgerOpen = document.querySelector("#burger-open");
+        const burgerClose = document.querySelector("#burger-close");
+        const burger = document.querySelector("#burger");
+        const burgerOverlay = document.querySelector("#burger-overlay");
+        if (burger) {
+            burger.addEventListener("click", e => e.stopPropagation());
+            burgerOverlay.addEventListener("click", handlerBurgerClose);
+            burgerOpen.addEventListener("click", e => {
+                e.stopPropagation();
+                handlerBurgerOpen();
+            });
+            burgerClose.addEventListener("click", e => {
+                e.stopPropagation();
+                handlerBurgerClose();
+            });
+            function handlerBurgerClose() {
+                burger.classList.remove("_open");
+                burgerOverlay.classList.remove("_active");
+                document.body.classList.remove("body-hidden");
+            }
+            function handlerBurgerOpen() {
+                burger.classList.add("_open");
+                burgerOverlay.classList.add("_active");
+                document.body.classList.add("body-hidden");
+            }
+            function updateHeightBurger() {
+                burger.style.maxHeight = `${window.visualViewport.height}px`;
+            }
+            window.visualViewport.addEventListener("resize", updateHeightBurger);
+            window.visualViewport.addEventListener("scroll", updateHeightBurger);
+            updateHeightBurger();
+        }
+    }
     function loader() {
         const loader = document.querySelector(".loader");
         if (loader) window.addEventListener("load", () => {
             const cloudT = loader.querySelector(".loader__cloud-t");
             const cloudBl = loader.querySelector(".loader__cloud-bl");
             const cloudBr = loader.querySelector(".loader__cloud-br");
+            const logo = loader.querySelector(".loader__logo");
             setTimeout(() => {
                 cloudT.style.opacity = 0;
                 cloudT.style.top = "-100%";
@@ -13,6 +48,7 @@
                 cloudBl.style.left = "-100%";
                 cloudBr.style.opacity = 0;
                 cloudBr.style.right = "-100%";
+                logo.style.opacity = 0;
                 setTimeout(() => {
                     loader.style.opacity = 0;
                     loader.style.visibility = "hidden";
@@ -22,6 +58,54 @@
                 }, 2100);
             }, 300);
         });
+    }
+    function servicesToggle() {
+        const servicesBlock = document.querySelector("#services");
+        if (servicesBlock) {
+            document.querySelector(".header");
+            const overlay = document.querySelector("#services-overlay");
+            const btn = document.querySelector("#services-btn");
+            btn.addEventListener("mouseover", () => {
+                servicesBlock.classList.add("_open");
+                overlay.classList.add("_active");
+            });
+            overlay.addEventListener("mouseover", () => {
+                servicesBlock.classList.remove("_open");
+                overlay.classList.remove("_active");
+            });
+        }
+    }
+    function sliders() {
+        const introSlider = document.querySelector(".intro__slider");
+        if (introSlider) {
+            new Swiper(introSlider, {
+                speed: 1e3,
+                effect: "fade",
+                navigation: {
+                    prevEl: ".intro .slider-btn._prev",
+                    nextEl: ".intro .slider-btn._next"
+                },
+                autoplay: {
+                    delay: 3500
+                },
+                pagination: {
+                    el: ".intro__slider-pagination",
+                    clickable: true
+                }
+            });
+        }
+        const aboutSlider = document.querySelector(".s-about__slider");
+        if (aboutSlider) {
+            new Swiper(aboutSlider, {
+                speed: 1e3,
+                slidesPerView: "auto",
+                spaceBetween: 24,
+                navigation: {
+                    prevEl: ".s-about .slider-btn._prev",
+                    nextEl: ".s-about .slider-btn._next"
+                }
+            });
+        }
     }
     function spoller() {
         const spollersArray = document.querySelectorAll("[data-spollers]");
@@ -215,4 +299,8 @@
     }
     spoller();
     loader();
+    burger();
+    servicesToggle();
+    sliders();
+    Fancybox.bind("[data-fancybox]", {});
 })();
