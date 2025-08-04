@@ -1,0 +1,26 @@
+.s-services {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-bottom: 70px;
+
+    @include laptop {
+      margin-bottom: 50px;
+      gap: 40px;
+    }
+    @include laptop-middle {
+      grid-template-columns: repeat(2,1fr);
+    }
+    @include laptop-min {
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__btn {
+    margin: 0 auto;
+  }
+}

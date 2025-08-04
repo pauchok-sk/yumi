@@ -12,6 +12,9 @@
 @import "./ui/list";
 @import "./ui/slider";
 @import "./ui/title";
+@import "./ui/card-service";
+@import "./ui/card-stock";
+@import "./ui/card-spec";
 
 // widgets
 @import "./widgets/loader";
@@ -25,5 +28,9 @@
 @import "./components/s-about";
 @import "./components/s-why";
 @import "./components/s-services";
+@import "./components/s-certificates";
+@import "./components/s-stocks";
+@import "./components/s-team";
+@import "./components/s-contacts";
 
 @import "./components/footer";

@@ -38,6 +38,14 @@
     }
   }
 
+  &._linear {
+    background-color: rgba(180, 153, 123, 0.7);
+    backdrop-filter: blur(30px);
+    @include hover {
+      background-color: rgba(180, 153, 123, 1);
+    }
+  }
+
   &.swiper-button-disabled {
     pointer-events: none;
     opacity: 0;
@@ -56,6 +64,7 @@
 .slider-pagination {
   @include flex-center;
   gap: 10px;
+  margin-top: 30px;
   .swiper-pagination-bullet {
     cursor: pointer;
     opacity: 0.7;
@@ -74,6 +83,13 @@
     &.swiper-pagination-bullet-active {
       pointer-events: none;
       opacity: 1;
+    }
+  }
+
+  &._mob {
+    display: none;
+    @include tablet {
+      display: flex;
     }
   }
 }

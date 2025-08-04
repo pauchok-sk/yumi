@@ -1,0 +1,28 @@
+.s-team {
+  color: var(--white);
+  &__slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .slider-btn {
+      &._prev {
+        left: -35px;
+      }
+      &._next {
+        right: -35px;
+      }
+
+      @media (max-width: 1899px) {
+        &._prev {
+          left: 20px;
+        }
+        &._next {
+          right: 20px;
+        }
+      }
+    }
+  }
+  &__slider {
+  }
+}

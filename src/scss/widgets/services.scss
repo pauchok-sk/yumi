@@ -90,7 +90,7 @@
     a {
       font-size: 18px;
 
-      transition: opacity 0.2s ease;
+      transition: opacity 0.5s ease;
       @include hover {
         opacity: 0.5;
       }

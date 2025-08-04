@@ -6,6 +6,13 @@
   max-width: calc(100% - 30px);
   margin: 0 auto;
   z-index: 100;
+
+  transition: transform .5s ease;
+
+  &._hide {
+    transform: translateY(-100%);
+  }
+
   @include tablet {
     padding-top: 12px;
   }
@@ -64,7 +71,7 @@
 
     a {
       font-size: 18px;
-      transition: opacity 0.2s ease;
+      transition: opacity 0.5s ease;
       @include hover {
         opacity: 0.5;
       }
@@ -130,7 +137,7 @@
     height: 30px;
     opacity: 0.5;
 
-    transition: opacity 0.2s ease;
+    transition: opacity 0.5s ease;
     @include hover {
       opacity: 1;
     }
@@ -151,7 +158,7 @@
     width: fit-content;
     margin: 0px 0px 4px auto;
     font-size: 24px;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.5s ease;
     @include hover {
       opacity: 0.5;
     }
@@ -176,7 +183,7 @@
     width: 30px;
     height: 30px;
     order: 2;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.5s ease;
     @include hover {
       opacity: 0.5;
     }

@@ -5,9 +5,25 @@
     margin-left: auto;
     margin-right: auto;
   }
-  &__title {
-  }
-  &__content {
+  &__slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .slider-btn {
+      &._prev {
+        left: 140px;
+        @include laptop {
+          left: 0;
+        }
+      }
+      &._next {
+        right: 140px;
+        @include laptop {
+          right: 0;
+        }
+      }
+    }
   }
   &__slider {
     overflow: visible !important;
@@ -19,19 +35,6 @@
     height: 500px;
     outline: none;
 
-    &._tr {
-      border-top-right-radius: 200px;
-    }
-    &._br {
-      border-bottom-right-radius: 200px;
-    }
-    &._tl {
-      border-top-left-radius: 200px;
-    }
-    &._bl {
-      border-bottom-left-radius: 200px;
-    }
-
     transition: border-radius .5s ease;
     @include hover {
       border-radius: 20px !important;
@@ -39,6 +42,10 @@
       img {
         transform: scale(1.07);
       }
+    }
+    @include tablet {
+      width: 100% !important;
+      height: 400px;
     }
 
     img {

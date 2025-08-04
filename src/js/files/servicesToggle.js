@@ -6,6 +6,8 @@ export default function servicesToggle() {
     const overlay = document.querySelector("#services-overlay");
     const btn = document.querySelector("#services-btn");
 
+    servicesBlock.style.top = `${header.clientHeight}px`;
+
     btn.addEventListener("mouseover", () => {
       servicesBlock.classList.add("_open");
       overlay.classList.add("_active");

@@ -1,0 +1,49 @@
+.card-stock {
+  display: flex;
+  flex-direction: column;
+  &__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/0.71;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin: 30px 0px 20px 0px;
+    @include laptop {
+      font-size: 20px;
+    }
+  }
+  &__date {
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 17px 20px;
+    border: 1px solid var(--dark);
+    border-radius: 100px;
+    width: fit-content;
+
+    font-size: 16px;
+    line-height: 120%;
+
+    transition: color .5s ease, background-color .5s ease;
+
+    @include hover {
+      background-color: var(--dark);
+      color: var(--white);
+    }
+
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}

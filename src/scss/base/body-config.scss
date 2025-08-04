@@ -41,6 +41,9 @@
 
 .sect-head {
   margin-bottom: 70px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   @include laptop-middle {
     margin-bottom: 50px;
   }
@@ -54,6 +57,73 @@
     margin-bottom: 50px !important;
     @include tablet {
       margin-bottom: 25px !important;
+    }
+  }
+}
+
+._tr {
+  border-top-right-radius: 200px !important;
+  @include tablet {
+    border-top-right-radius: 100px !important;
+  }
+}
+._br {
+  border-bottom-right-radius: 200px !important;
+  @include tablet {
+    border-bottom-right-radius: 100px !important;
+  }
+}
+._tl {
+  border-top-left-radius: 200px !important;
+  @include tablet {
+    border-top-left-radius: 100px !important;
+  }
+}
+._bl {
+  border-bottom-left-radius: 200px !important;
+  @include tablet {
+    border-bottom-left-radius: 100px !important;
+  }
+}
+
+._tr-b {
+  border-top-right-radius: 280px !important;
+  @include tablet {
+    border-top-right-radius: 180px !important;
+  }
+}
+._br-b {
+  border-bottom-right-radius: 280px !important;
+  @include tablet {
+    border-bottom-right-radius: 180px !important;
+  }
+}
+._tl-b {
+  border-top-left-radius: 280px !important;
+  @include tablet {
+    border-top-left-radius: 180px !important;
+  }
+}
+._bl-b {
+  border-bottom-left-radius: 280px !important;
+  @include tablet {
+    border-bottom-left-radius: 180px !important;
+  }
+}
+
+.content {
+  font-size: 18px;
+  line-height: 145%;
+  margin: 0;
+
+  @include tablet {
+    font-size: 16px;
+  }
+
+  p {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 20px;
     }
   }
 }

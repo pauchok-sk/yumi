@@ -1,0 +1,242 @@
+.footer {
+  background-color: var(--dark);
+  color: var(--white);
+  @include laptop {
+    padding: 60px 0px;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 40px;
+    @include laptop {
+      flex-wrap: wrap;
+    }
+    @include tablet-min {
+      text-align: center;
+    }
+
+    a {
+      transition: opacity 0.5s ease;
+      @include hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__main {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 40px;
+    @include laptop {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__item {
+    padding: 80px 0px;
+    @include laptop {
+      padding: 0;
+    }
+    @include tablet-min {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__logo {
+    display: block;
+    width: 280px;
+
+    @include tablet {
+      width: 200px;
+    }
+    @include tablet-min {
+      margin: 0 auto;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__main-body {
+    flex: 0 1 700px;
+    @include tablet {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__main-contacts {
+    width: 620px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    @include tablet-min {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__contacts-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    line-height: 145%;
+    @include tablet {
+      font-size: 16px;
+    }
+    @include tablet-min {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__tel {
+    display: block;
+    width: fit-content;
+    font-size: 24px;
+    line-height: 145%;
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+  &__mail {
+    display: block;
+    width: fit-content;
+  }
+  &__social {
+    display: flex;
+    gap: 25px;
+    @include tablet-min {
+      justify-content: center;
+    }
+  }
+  &__social-btn {
+    @include flex-center;
+    border-radius: 50%;
+    border: 1px solid rgba(248, 247, 245, 0.2);
+    opacity: 1 !important;
+    width: 40px;
+    height: 40px;
+
+    transition:
+      color 0.5s ease,
+      background-color 0.5s ease,
+      border-color 0.5s ease !important;
+
+    @include hover {
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  &__contacts-address {
+  }
+  &__work-time {
+    opacity: 0.5;
+    max-width: 235px;
+    @include tablet {
+      max-width: 215px;
+    }
+  }
+  &__nav {
+    margin-top: 70px;
+    display: flex;
+    gap: 80px;
+    @include laptop-min {
+      margin-top: 50px;
+    }
+    @include tablet {
+      margin-top: 40px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    @include tablet-min {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  &__nav-item {
+    font-size: 18px;
+    line-height: 145%;
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+  &__nav-title {
+    font-weight: 400;
+    opacity: 0.5;
+    font-size: 18px;
+    line-height: 145%;
+    margin: 0px 0px 20px 0px;
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__info {
+    flex: 0 1 560px;
+    padding-left: 60px;
+    border-left: 1px solid rgb(180, 153, 123, 0.2);
+    @include laptop {
+      padding-left: 0;
+      border-left: none;
+      flex: none;
+      width: 100%;
+      padding-top: 40px;
+      border-top: 1px solid rgb(180, 153, 123, 0.2);
+    }
+  }
+  &__content {
+    font-size: 14px;
+    line-height: 130%;
+    opacity: 0.5;
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__info-list {
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    a {
+      font-size: 14px;
+      line-height: 130%;
+    }
+  }
+  &__dev {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 6px;
+    font-size: 14px;
+    line-height: 130%;
+
+    span {
+      opacity: 0.5;
+    }
+  }
+}

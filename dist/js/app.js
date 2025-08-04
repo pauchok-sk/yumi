@@ -34,6 +34,17 @@
             updateHeightBurger();
         }
     }
+    function headerScroll() {
+        const header = document.querySelector(".header");
+        if (header) {
+            let lastScrollTop = 0;
+            window.addEventListener("scroll", () => {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop && scrollTop >= header.clientHeight) header.classList.add("_hide"); else header.classList.remove("_hide");
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            });
+        }
+    }
     function loader() {
         const loader = document.querySelector(".loader");
         if (loader) window.addEventListener("load", () => {
@@ -59,12 +70,37 @@
             }, 300);
         });
     }
+    function map() {
+        const contactsMap = document.querySelector("#map");
+        if (contactsMap) {
+            function init() {
+                const center = JSON.parse(contactsMap.dataset.center);
+                const zoom = Number(contactsMap.dataset.zoom);
+                const map = new ymaps.Map("map", {
+                    center,
+                    zoom
+                });
+                const placemark = new ymaps.Placemark(center, {}, {});
+                map.controls.remove("geolocationControl");
+                map.controls.remove("searchControl");
+                map.controls.remove("trafficControl");
+                map.controls.remove("typeSelector");
+                map.controls.remove("fullscreenControl");
+                map.controls.remove("zoomControl");
+                map.controls.remove("rulerControl");
+                map.behaviors.disable([ "scrollZoom" ]);
+                map.geoObjects.add(placemark);
+            }
+            ymaps.ready(init);
+        }
+    }
     function servicesToggle() {
         const servicesBlock = document.querySelector("#services");
         if (servicesBlock) {
-            document.querySelector(".header");
+            const header = document.querySelector(".header");
             const overlay = document.querySelector("#services-overlay");
             const btn = document.querySelector("#services-btn");
+            servicesBlock.style.top = `${header.clientHeight}px`;
             btn.addEventListener("mouseover", () => {
                 servicesBlock.classList.add("_open");
                 overlay.classList.add("_active");
@@ -103,6 +139,42 @@
                 navigation: {
                     prevEl: ".s-about .slider-btn._prev",
                     nextEl: ".s-about .slider-btn._next"
+                },
+                autoplay: {
+                    delay: 3e3
+                }
+            });
+        }
+        const teamSlider = document.querySelector(".s-team__slider");
+        if (teamSlider) {
+            new Swiper(teamSlider, {
+                speed: 1e3,
+                slidesPerView: 1,
+                spaceBetween: 24,
+                navigation: {
+                    prevEl: ".s-team .slider-btn._prev",
+                    nextEl: ".s-team .slider-btn._next"
+                },
+                autoplay: {
+                    delay: 3500
+                },
+                pagination: {
+                    el: ".s-team .slider-pagination",
+                    clickable: true
+                },
+                breakpoints: {
+                    1366: {
+                        slidesPerView: 4,
+                        spaceBetween: 24
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 24
+                    },
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 24
+                    }
                 }
             });
         }
@@ -302,5 +374,7 @@
     burger();
     servicesToggle();
     sliders();
+    map();
+    headerScroll();
     Fancybox.bind("[data-fancybox]", {});
 })();

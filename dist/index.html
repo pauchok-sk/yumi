@@ -8,10 +8,10 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap&_v=20250801122310" rel="stylesheet" />
-	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250801122310">
-	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250801122310">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250801122310" />
+	<link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap&_v=20250804133224" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250804133224">
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250804133224">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250804133224" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -242,7 +242,7 @@
 					<h2 class="s-title s-about__title">
 						Yumi spa - спа-салон премиум-класса в Казани
 					</h2>
-					<p class="s-about__content">
+					<p class="content">
 						Погрузитесь в мир безмятежности с нашими спа-программами, где каждая
 						процедура для лица, волос и тела – это симфония чувственного
 						наслаждения. Путешествие начинается с ароматерапии, сотканной из
@@ -254,6 +254,16 @@
 					</p>
 				</div>
 				<div class="s-about__slider-wrapper">
+					<div class="slider-btn _prev _linear">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+						</svg>
+					</div>
+					<div class="slider-btn _next _linear">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</div>
 					<div class="swiper s-about__slider">
 						<div class="swiper-wrapper">
 							<a href="img/about.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _tr">
@@ -324,17 +334,432 @@
 			</div>
 		</section>
 
+		<section class="s-services sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">Spa-программы</h2>
+				</div>
+				<div class="s-services__wrapper">
+					<a href="#" class="card-service">
+						<img src="img/service.jpg" alt="image" class="card-service__img _tr-b _br-b" />
+						<div class="card-service__circle">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-rotate"></use>
+							</svg>
+						</div>
+						<h5 class="card-service__title">Массаж всего тела</h5>
+						<ul class="list card-service__list">
+							<li>для одного</li>
+							<li>90 мин</li>
+						</ul>
+					</a>
+					<a href="#" class="card-service">
+						<img src="img/service.jpg" alt="image" class="card-service__img _tr-b" />
+						<div class="card-service__circle">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-rotate"></use>
+							</svg>
+						</div>
+						<h5 class="card-service__title">Soft skin</h5>
+						<ul class="list card-service__list">
+							<li>для одного / для двоих</li>
+							<li>30 мин</li>
+						</ul>
+					</a>
+					<a href="#" class="card-service">
+						<img src="img/service.jpg" alt="image" class="card-service__img _bl-b" />
+						<div class="card-service__circle">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-rotate"></use>
+							</svg>
+						</div>
+						<h5 class="card-service__title">Массаж всего тела</h5>
+						<ul class="list card-service__list">
+							<li>для одного</li>
+							<li>90 мин</li>
+						</ul>
+					</a>
+					<a href="#" class="card-service">
+						<img src="img/service.jpg" alt="image" class="card-service__img _tl-b" />
+						<div class="card-service__circle">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-rotate"></use>
+							</svg>
+						</div>
+						<h5 class="card-service__title">Soft skin</h5>
+						<ul class="list card-service__list">
+							<li>для одного / для двоих</li>
+							<li>30 мин</li>
+						</ul>
+					</a>
+					<a href="#" class="card-service">
+						<img src="img/service.jpg" alt="image" class="card-service__img _tl-b _tr-b" />
+						<div class="card-service__circle">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-rotate"></use>
+							</svg>
+						</div>
+						<h5 class="card-service__title">Массаж всего тела</h5>
+						<ul class="list card-service__list">
+							<li>для одного</li>
+							<li>90 мин</li>
+						</ul>
+					</a>
+					<a href="#" class="card-service">
+						<img src="img/service.jpg" alt="image" class="card-service__img _br-b" />
+						<div class="card-service__circle">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-rotate"></use>
+							</svg>
+						</div>
+						<h5 class="card-service__title">Soft skin</h5>
+						<ul class="list card-service__list">
+							<li>для одного / для двоих</li>
+							<li>30 мин</li>
+						</ul>
+					</a>
+				</div>
+				<a href="#" class="btn-circle s-services__btn">Все программы</a>
+			</div>
+		</section>
 
+		<section class="s-certificates sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">Подарочные сертификаты для близких</h2>
+					<div class="s-certificates__head-wrapper">
+						<p class="content s-certificates__head-content">
+							Погрузитесь в мир безмятежности с нашими спа-программами, где каждая
+							процедура для лица, волос и тела – это симфония чувственного
+							наслаждения. Путешествие начинается с ароматерапии, сотканной из
+							тончайших нитей натуральных масел, и умиротворяющего акустического
+							фона. Затем, словно ласковое прикосновение ветра, следует мягкий, но
+							глубокий массаж головы, шеи и плеч. Под чуткими руками мастера
+							пробуждаются ключевые точки и меридианы, оживляется лимфоток, и кровь
+							начинает свой животворный танец.
+						</p>
+						<a href="#" class="btn-circle _outline">Приобрести сертификат</a>
+					</div>
+				</div>
+				<div class="s-certificates__gallery">
+					<img src="img/logo-simple.svg" alt="logo" class="s-certificates__gallery-logo">
+					<img src="img/certificate-gallery.jpg" alt="image" class="s-certificates__img">
+					<img src="img/certificate.png" alt="image" class="s-certificates__doc">
+				</div>
+			</div>
+		</section>
+
+		<section class="s-stocks sect-p">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">Акции</h2>
+				</div>
+				<div class="s-stocks__wrapper">
+					<div class="s-stocks__grid">
+						<a href="#" class="card-stock">
+							<img src="img/service.jpg" alt="image" class="card-stock__img" />
+							<h5 class="card-stock__title">Массаж всего тела в подарок!</h5>
+							<div class="card-stock__date">15.06.2025 - 30.06.2025</div>
+							<div class="card-stock__btn">
+								<span>Подробнее</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="card-stock">
+							<img src="img/service.jpg" alt="image" class="card-stock__img" />
+							<h5 class="card-stock__title">Акция на Soft skin</h5>
+							<div class="card-stock__date">15.06.2025 - 30.06.2025</div>
+							<div class="card-stock__btn">
+								<span>Подробнее</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="card-stock">
+							<img src="img/service.jpg" alt="image" class="card-stock__img" />
+							<h5 class="card-stock__title">Perfect body при покупке абонемента</h5>
+							<div class="card-stock__date">15.06.2025 - 30.06.2025</div>
+							<div class="card-stock__btn">
+								<span>Подробнее</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+								</svg>
+							</div>
+						</a>
+					</div>
+					<a href="#" class="btn-circle _outline s-stocks__btn-all">Все акции</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-team sect-p" style="background: url(&quot;img/team.jpg&quot;) center / cover no-repeat">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">Специалисты Yumi Spa</h2>
+				</div>
+				<div class="s-team__slider-wrapper">
+					<div class="slider-btn _prev _linear">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+						</svg>
+					</div>
+					<div class="slider-btn _next _linear">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</div>
+					<div class="swiper s-team__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-pagination _mob"></div>
+			</div>
+		</section>
+
+		<section class="s-reviews sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">Впечатления о нас</h2>
+				</div>
+			</div>
+		</section>
+		<section class="s-contacts sect-m">
+			<img src="img/contacts-bg.png" alt="image" class="s-contacts__bg">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">Где мы находимся</h2>
+				</div>
+				<div class="s-contacts__info">
+					<div class="s-contacts__item">
+						<h5 class="s-contacts__item-title">Телефон для записи</h5>
+						<a href="tel:+79033073311" class="s-contacts__tel">+7 (903) 307-33-11</a>
+					</div>
+					<div class="s-contacts__item">
+						<h5 class="s-contacts__item-title">Телефон для записи</h5>
+						<div class="s-contacts__social">
+							<a href="#" target="_blank" class="s-contacts__social-btn">
+								<svg>
+									<use xlink:href='img/icons/icons.svg#icon-tg'></use>
+								</svg>
+							</a>
+							<a href="#" target="_blank" class="s-contacts__social-btn">
+								<svg>
+									<use xlink:href='img/icons/icons.svg#icon-wh'></use>
+								</svg>
+							</a>
+							<a href="#" target="_blank" class="s-contacts__social-btn">
+								<svg>
+									<use xlink:href='img/icons/icons.svg#icon-vk'></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="s-contacts__item">
+						<h5 class="s-contacts__item-title">Мы находимся по адресу</h5>
+						<p class="s-contacts__item-content">Казань, ул. Спартаковская, 14</p>
+					</div>
+					<div class="s-contacts__item">
+						<h5 class="s-contacts__item-title">График работы</h5>
+						<p class="s-contacts__item-content">Пн - Пт: с 09:00 до 19:00, Сб - Вс: с 10:00 до 18:00</p>
+					</div>
+				</div>
+				<div class="s-contacts__grid">
+					<div class="s-contacts__map" data-zoom="17" data-center="[55.777089068971875,49.13440549999997]" id="map"></div>
+					<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox class="s-contacts__video">
+						<img src="img/contacts.jpg" alt="image">
+						<div class="btn-play">
+							<svg>
+								<use xlink:href='img/icons/icons.svg#icon-play'></use>
+							</svg>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
 
 	</main>
 	<footer class="footer">
 		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__main footer__item">
+					<a href="/" class="footer__logo">
+						<img src="img/logo.svg" alt="logo" />
+					</a>
+					<div class="footer__main-body">
+						<div class="footer__main-contacts">
+							<div class="footer__contacts-item">
+								<a href="tel:+79033073311" class="footer__tel">
+									+7 (903) 307-33-11
+								</a>
+								<a href="mailto:evgewa_loy@hotmail.com" class="footer__mail">
+									evgewa_loy@hotmail.com
+								</a>
+								<div class="footer__social">
+									<a href="#" target="_blank" class="footer__social-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+										</svg>
+									</a>
+									<a href="#" target="_blank" class="footer__social-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+										</svg>
+									</a>
+									<a href="#" target="_blank" class="footer__social-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-vk"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="footer__contacts-item">
+								<div class="footer__contacts-address">
+									Казань, ул. Спартаковская, 14
+								</div>
+								<div class="footer__work-time">
+									Пн - Пт: с 09:00 до 19:00, Сб - Вс: с 10:00 до 18:00
+								</div>
+							</div>
+						</div>
+						<div class="footer__nav">
+							<div class="footer__nav-item">
+								<h5 class="footer__nav-title">О компании</h5>
+								<ul class="list footer__nav-list">
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Реквизиты</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="footer__nav-item">
+								<h5 class="footer__nav-title">Spa-программы</h5>
+								<ul class="list footer__nav-list">
+									<li><a href="#">Массаж всего тела</a></li>
+									<li><a href="#">Soft skin</a></li>
+									<li><a href="#">Perfect body</a></li>
+								</ul>
+							</div>
+							<div class="footer__nav-item">
+								<h5 class="footer__nav-title">Полезное</h5>
+								<ul class="list footer__nav-list">
+									<li><a href="#">Акции</a></li>
+									<li><a href="#">Услуги</a></li>
+									<li><a href="#">Оформление сертификата</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__item footer__info">
+					<div class="footer__content">
+						<p>© 2025. Yumi Spa. Все права защищены</p>
+						<p>
+							Обращаем Ваше внимание на то, что данный интернет-сайт носит
+							исключительно информационный характер и ни при каких условиях не
+							является публичной офертой. Для получения подробной информации о
+							стоимости, наименовании и сроках оказания услуг, пожалуйста,
+							обращайтесь по контактным телефонам. Конкретный перечень услуг и
+							порядок их предоставления определяется в договоре оказания услуг,
+							оформляемым между спа-салоном и пациентом
+						</p>
+						<p>
+							ИП Лой Евгения Георгиевна, ИНН: 500722343522, ОГРНИП:
+							325169000049433
+						</p>
+						<p>Медицинская лицензия №103131</p>
+					</div>
+					<ul class="list footer__info-list">
+						<li><a href="#" target="_blank">Публичная оферта</a></li>
+						<li><a href="#" target="_blank">Правила обработки персональных данных</a></li>
+					</ul>
+					<a href="https://qorix.ru/" target="_blank" class="footer__dev">
+						<span>Разработка сайта —</span>
+						<img src="img/qorix.svg" alt="logo">
+					</a>
+				</div>
+			</div>
 		</div>
 	</footer>
 
-	<script src="./files/swiper/swiper.min.js?_v=20250801122310"></script>
-	<script src="./files/fancybox/fancybox.min.js?_v=20250801122310"></script>
-	<script src="js/app.min.js?_v=20250801122310"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20250804133224"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20250804133224"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU&_v=20250804133224" type="text/javascript"></script>
+	<script src="js/app.min.js?_v=20250804133224"></script>
 </body>
 
 </html>
