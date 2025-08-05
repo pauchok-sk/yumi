@@ -21,3 +21,22 @@
     font-size: 28px;
   }
 }
+
+.m-title {
+  font-size: 72px;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0;
+  @include laptop-middle {
+    font-size: 60px;
+  }
+  @include laptop-min {
+    font-size: 52px;
+  }
+  @include tablet {
+    font-size: 42px;
+  }
+  @include tablet-min {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,62 @@
+.s-connect {
+  &__wrapper {
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    display: block;
+    border-radius: 30px 30px 300px 30px;
+    width: 940px;
+    height: 500px;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    transform: translateY(-150px);
+    @media(max-width: 1799px) {
+      width: 680px;
+      height: 385px;
+    }
+    @include desktop {
+      position: static;
+      transform: translateY(0);
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+    }
+    @include tablet {
+      border-radius: 20px 20px 100px 20px;
+    }
+  }
+  &__body {
+    margin-left: auto;
+    padding: 90px 180px;
+    border-radius: 30px;
+    width: 1000px;
+    max-width: 100%;
+    @include desktop {
+      margin-top: 50px;
+      width: 100%;
+    }
+    @include laptop-min {
+      margin-top: 40px;
+      padding: 50px 30px;
+    }
+    @include tablet {
+      margin-top: 30px;
+    }
+    @include tablet-min {
+      padding: 25px 15px;
+    }
+  }
+  &__title {
+    margin-bottom: 60px;
+    @include laptop-min {
+      margin-bottom: 40px;
+    }
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+  &__form {
+  }
+}

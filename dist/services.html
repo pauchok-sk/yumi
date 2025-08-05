@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap&_v=20250805121817" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250805121817">
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250805121817">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250805121817" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="header__body">
+			<nav class="header__nav">
+				<a href="#" class="btn-simple" id="services-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-services"></use>
+					</svg>
+					<span>Услуги</span>
+				</a>
+				<ul class="list header__list">
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="header__contacts">
+				<a href="#" class="btn-simple header__btn-anket">Заполнить анкету</a>
+				<div class="header__social">
+					<a href="#" target="_blank" class="header__social-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+						</svg>
+					</a>
+					<a href="#" target="_blank" class="header__social-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="header__contacts-main">
+					<a href="tel:+79033073311" class="header__tel">+7 (903) 307-33-11</a>
+					<div class="header__address">г. Казань, ул. Спартаковская, 14</div>
+				</div>
+			</div>
+			<div class="header__burger-btn" id="burger-open">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</header>
+
+	<div class="burger-overlay" id="burger-overlay"></div>
+	<div class="burger" id="burger">
+		<div class="burger__head">
+			<a href="/" class="burger__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="burger__close" id="burger-close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+		</div>
+		<ul class="list burger__list">
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Прайс-лист</a></li>
+			<li><a href="#">Акции</a></li>
+			<li><a href="#">О нас</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<div class="burger__contacts">
+			<a href="#" class="btn-simple burger__btn-anket _dark">Заполнить анкету</a>
+			<div class="burger__social">
+				<a href="#" target="_blank" class="burger__social-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+					</svg>
+				</a>
+				<a href="#" target="_blank" class="burger__social-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="burger__contacts-main">
+				<a href="tel:+79033073311" class="burger__tel">+7 (903) 307-33-11</a>
+				<div class="burger__address">г. Казань, ул. Спартаковская, 14</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="services-overlay" id="services-overlay"></div>
+	<div class="services" id="services">
+		<div class="services__wrapper">
+			<div class="services__container">
+				<div class="services__item">
+					<h5 class="services__title">Для женщин</h5>
+					<ul class="list services__list">
+						<li><a href="#">Лимфодренажный массаж</a></li>
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+						<li><a href="#">Perfect body</a></li>
+						<li><a href="#">Коррекция фигуры</a></li>
+					</ul>
+				</div>
+				<div class="services__item">
+					<h5 class="services__title">Для мужчин</h5>
+					<ul class="list services__list">
+						<li><a href="#">Лимфодренажный массаж</a></li>
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+						<li><a href="#">Коррекция фигуры</a></li>
+					</ul>
+				</div>
+				<div class="services__item">
+					<h5 class="services__title">Для детей</h5>
+					<ul class="list services__list">
+						<li><a href="#">Лимфодренажный массаж</a></li>
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+					</ul>
+				</div>
+				<div class="services__item">
+					<h5 class="services__title">Для двоих</h5>
+					<ul class="list services__list">
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+						<li><a href="#">Perfect body</a></li>
+						<li><a href="#">Коррекция фигуры</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main>
+
+
+		<section class="s-connect sect-p">
+			<div class="container">
+				<div class="s-connect__wrapper">
+					<img src="img/connect.jpg" alt="image" class="s-connect__img" />
+					<div class="s-connect__body" style="
+          background: url(&quot;img/connect-bg.jpg&quot;) 0 0 / 500px auto
+            repeat;
+        ">
+						<h2 class="s-title s-connect__title">Свяжитесь с нами</h2>
+						<form action="#" class="form s-connect__form">
+							<div class="form__body">
+								<div class="input-control">
+									<label for="connect-name" class="label-input">Имя</label>
+									<input type="text" id="connect-name" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+								</div>
+								<input type="checkbox" id="connect-policy" checked class="input-policy" />
+								<label for="connect-policy" class="label-policy">
+									<span>
+										Я соглашаюсь с
+										<a href="#" target="_blank">
+											Политикой обработкиперсональных данных
+										</a>
+										и
+										<a href="#" target="_blank">Политикой конфиденциальности</a>
+									</span>
+								</label>
+							</div>
+							<button class="btn-circle _outline form__btn">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<div class="modal" id="modal-order" style="
+    background: url(&quot;img/connect-bg.jpg&quot;) 0 0 / 500px auto repeat;
+  ">
+		<div class="modal__close" data-fancybox-close>
+			<svg>
+				<use xlink:href='img/icons/icons.svg#icon-close-2'></use>
+			</svg>
+		</div>
+		<h3 class="s-title modal__title">Заказать</h3>
+		<div class="modal-order__type" id="order-name"></div>
+		<div class="modal-order__id" id="order-id"></div>
+		<form action="#" class="form modal-order__form">
+			<div class="form__body">
+				<input type="text" id="order-name-input" style="display: none;" />
+				<input type="text" id="order-id-input" style="display: none;" />
+				<div class="input-control">
+					<label for="order-name" class="label-input">Имя</label>
+					<input type="text" id="order-name" class="input" />
+				</div>
+				<div class="input-control">
+					<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+				</div>
+				<input type="checkbox" id="order-policy" checked class="input-policy" />
+				<label for="order-policy" class="label-policy">
+					<span>
+						Я соглашаюсь с
+						<a href="#" target="_blank">Политикой обработкиперсональных данных</a>
+						и
+						<a href="#" target="_blank">Политикой конфиденциальности</a>
+					</span>
+				</label>
+			</div>
+			<button class="btn-circle form__btn">Отправить</button>
+		</form>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__main footer__item">
+					<a href="/" class="footer__logo">
+						<img src="img/logo.svg" alt="logo" />
+					</a>
+					<div class="footer__main-body">
+						<div class="footer__main-contacts">
+							<div class="footer__contacts-item">
+								<a href="tel:+79033073311" class="footer__tel">
+									+7 (903) 307-33-11
+								</a>
+								<a href="mailto:evgewa_loy@hotmail.com" class="footer__mail">
+									evgewa_loy@hotmail.com
+								</a>
+								<div class="footer__social">
+									<a href="#" target="_blank" class="footer__social-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+										</svg>
+									</a>
+									<a href="#" target="_blank" class="footer__social-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+										</svg>
+									</a>
+									<a href="#" target="_blank" class="footer__social-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-vk"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="footer__contacts-item">
+								<div class="footer__contacts-address">
+									Казань, ул. Спартаковская, 14
+								</div>
+								<div class="footer__work-time">
+									Пн - Пт: с 09:00 до 19:00, Сб - Вс: с 10:00 до 18:00
+								</div>
+							</div>
+						</div>
+						<div class="footer__nav">
+							<div class="footer__nav-item">
+								<h5 class="footer__nav-title">О компании</h5>
+								<ul class="list footer__nav-list">
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Реквизиты</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="footer__nav-item">
+								<h5 class="footer__nav-title">Spa-программы</h5>
+								<ul class="list footer__nav-list">
+									<li><a href="#">Массаж всего тела</a></li>
+									<li><a href="#">Soft skin</a></li>
+									<li><a href="#">Perfect body</a></li>
+								</ul>
+							</div>
+							<div class="footer__nav-item">
+								<h5 class="footer__nav-title">Полезное</h5>
+								<ul class="list footer__nav-list">
+									<li><a href="#">Акции</a></li>
+									<li><a href="#">Услуги</a></li>
+									<li><a href="#">Оформление сертификата</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__item footer__info">
+					<div class="footer__content">
+						<p>© 2025. Yumi Spa. Все права защищены</p>
+						<p>
+							Обращаем Ваше внимание на то, что данный интернет-сайт носит
+							исключительно информационный характер и ни при каких условиях не
+							является публичной офертой. Для получения подробной информации о
+							стоимости, наименовании и сроках оказания услуг, пожалуйста,
+							обращайтесь по контактным телефонам. Конкретный перечень услуг и
+							порядок их предоставления определяется в договоре оказания услуг,
+							оформляемым между спа-салоном и пациентом
+						</p>
+						<p>
+							ИП Лой Евгения Георгиевна, ИНН: 500722343522, ОГРНИП:
+							325169000049433
+						</p>
+						<p>Медицинская лицензия №103131</p>
+					</div>
+					<ul class="list footer__info-list">
+						<li><a href="#" target="_blank">Публичная оферта</a></li>
+						<li>
+							<a href="#" target="_blank">
+								Правила обработки персональных данных
+							</a>
+						</li>
+					</ul>
+					<a href="https://qorix.ru/" target="_blank" class="footer__dev">
+						<span>Разработка сайта —</span>
+						<img src="img/qorix.svg" alt="logo" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/swiper/swiper.min.js?_v=20250805121817"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20250805121817"></script>
+
+	<script src="js/app.min.js?_v=20250805121817"></script>
+</body>
+
+</html>

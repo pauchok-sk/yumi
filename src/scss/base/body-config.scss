@@ -22,6 +22,10 @@
   @include tablet-min {
     margin: 60px 0px;
   }
+
+  &._mt-off {
+    margin-top: 0 !important;
+  }
 }
 .sect-p {
   padding: 140px 0px;

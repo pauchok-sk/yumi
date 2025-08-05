@@ -9,14 +9,14 @@
 
   transition: transform .5s ease;
 
-  &._hide {
-    transform: translateY(-100%);
-  }
-
+  
   @include tablet {
     padding-top: 12px;
   }
-
+  
+  &._hide {
+    transform: translateY(-100%);
+  }
   &._fixed {
     position: fixed;
     left: 0;

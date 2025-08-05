@@ -63,7 +63,10 @@
   text-align: center;
   color: var(--white);
 
-  transition: color .5s ease, border-color .5s ease, background-color .5s ease;
+  transition:
+    color 0.5s ease,
+    border-color 0.5s ease,
+    background-color 0.5s ease;
 
   @include hover {
     border-color: var(--primary-l);
@@ -97,7 +100,7 @@
   background-color: var(--primary);
   color: var(--white);
 
-  transition: background-color .5s ease;
+  transition: background-color 0.5s ease;
 
   @include hover {
     background-color: var(--primary-l);
@@ -106,5 +109,52 @@
   svg {
     width: 35px;
     height: 35px;
+  }
+}
+
+.btn-s {
+  @include flex-center;
+  cursor: pointer;
+  padding: 18px 20px;
+  border-radius: 100px;
+  background-color: white;
+  border: none;
+  outline: none;
+
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+
+  transition:
+    color 0.5s ease,
+    background-color 0.5s ease;
+
+  @include hover {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+  @include tablet {
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+
+  &._active {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+  &._primary {
+    background-color: var(--primary);
+    color: var(--white);
+    @include hover {
+      background-color: white;
+      color: var(--dark);
+    }
+  }
+  &._satin {
+    background-color: var(--satin);
+    @include hover {
+      background-color: var(--primary);
+      color: var(--white);
+    }
   }
 }

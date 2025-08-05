@@ -15,11 +15,16 @@
 @import "./ui/card-service";
 @import "./ui/card-stock";
 @import "./ui/card-spec";
+@import "./ui/card-product";
+@import "./ui/breadcrumbs";
+@import "./ui/form";
 
 // widgets
 @import "./widgets/loader";
 @import "./widgets/burger";
 @import "./widgets/services";
+@import "./widgets/page-head";
+@import "./widgets/modal";
 
 // components
 @import "./components/header";
@@ -32,5 +37,7 @@
 @import "./components/s-stocks";
 @import "./components/s-team";
 @import "./components/s-contacts";
+@import "./components/s-catalog";
+@import "./components/s-connect";
 
 @import "./components/footer";

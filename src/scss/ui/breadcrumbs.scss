@@ -1,0 +1,35 @@
+.aioseo-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex: 0 1 400px;
+  margin-top: 20px;
+
+  @include laptop {
+    flex: none;
+    width: 100%;
+  }
+
+  a {
+    transition: opacity 0.7s ease;
+    color: var(--dark) !important;
+    @include hover {
+      opacity: 0.7;
+    }
+  }
+}
+.aioseo-breadcrumb {
+  font-size: 16px;
+  line-height: 120%;
+  color: rgba(79, 75, 72, 0.5);
+}
+.aioseo-breadcrumb-separator {
+  width: 8px;
+  height: 8px;
+  border: 1px solid currentColor;
+  flex-shrink: 0;
+  border-radius: 50%;
+  opacity: 0.5;
+  font-size: 0px;
+}

@@ -1,0 +1,92 @@
+.form {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  @include tablet-min {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 0 1 340px;
+    @include tablet-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+}
+.input-control {
+  position: relative;
+}
+.label-input {
+  display: block;
+  font-size: 12px;
+  line-height: 120%;
+  opacity: 0.5;
+}
+.input {
+  background-color: transparent;
+  padding: 7px 0px 13px 0px;
+  border: none;
+  border-bottom: 1px solid rgba(79, 75, 72, 0.2);
+  outline: none;
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 120%;
+
+  transition: border-color 0.5s ease;
+
+  &:focus {
+    border-color: var(--dark);
+  }
+
+  &::placeholder {
+    color: inherit;
+    opacity: 0.5;
+  }
+}
+.input-policy {
+  display: none;
+  &:checked + label {
+    &::before {
+      background: url("@img/check.svg") center / 12px auto no-repeat;
+      background-color: var(--dark);
+    }
+  }
+}
+.label-policy {
+  cursor: pointer;
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  
+  font-size: 14px;
+  line-height: 120%;
+
+  color: rgba(79, 75, 72, 0.5);
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--dark);
+    border-radius: 4px;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease;
+  }
+
+  a {
+    text-decoration: underline;
+    transition: color 0.5s ease;
+
+    @include hover {
+      color: var(--dark);
+    }
+  }
+}
