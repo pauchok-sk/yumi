@@ -12,12 +12,14 @@
 @import "./ui/list";
 @import "./ui/slider";
 @import "./ui/title";
+@import "./ui/tab";
 @import "./ui/card-service";
 @import "./ui/card-stock";
 @import "./ui/card-spec";
 @import "./ui/card-product";
 @import "./ui/breadcrumbs";
 @import "./ui/form";
+@import "./ui/more-items";
 
 // widgets
 @import "./widgets/loader";
@@ -39,5 +41,11 @@
 @import "./components/s-contacts";
 @import "./components/s-catalog";
 @import "./components/s-connect";
+@import "./components/s-archive-services";
+@import "./components/intro-service";
+@import "./components/s-spec";
+@import "./components/s-order";
+@import "./components/s-service-about";
+@import "./components/s-price";
 
 @import "./components/footer";

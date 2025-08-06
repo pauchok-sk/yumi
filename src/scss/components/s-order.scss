@@ -1,0 +1,75 @@
+.s-order {
+  &__body {
+    padding: 90px 30px;
+    border-radius: 30px 240px 30px 30px;
+    background-color: var(--white);
+    @include laptop-min {
+      padding: 40px 30px;
+      border-radius: 30px 150px 30px 30px;
+    }
+    @include tablet {
+      border-radius: 20px 100px 20px 20px;
+    }
+    @include tablet-min {
+      padding: 30px 15px;
+    }
+  }
+  &__body-container {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: 30px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &__content {
+    font-size: 18px;
+    line-height: 145%;
+    margin: 0px 0px 10px 0px;
+    @include laptop-min {
+      margin-bottom: 40px;
+    }
+    @include tablet {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+  }
+  &__form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    @include laptop-min {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-circle {
+      flex-shrink: 0;
+    }
+    .label-policy {
+      @include tablet {
+        margin-top: 15px;
+      }
+    }
+  }
+  &__form-grid {
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: repeat(2, 1fr);
+    flex: 0 1 900px;
+    gap: 60px;
+    row-gap: 10px;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+}

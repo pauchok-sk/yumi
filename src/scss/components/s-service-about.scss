@@ -1,0 +1,78 @@
+.s-service-about {
+  @include tablet {
+    overflow: hidden;
+  }
+  &__tabs-nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    @include tablet {
+      margin: 0 -15px;
+      white-space: nowrap;
+      overflow-y: auto;
+      flex-wrap: nowrap;
+      padding: 0 15px;
+    }
+  }
+  &__grid {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include laptop-middle {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    position: relative;
+    overflow: hidden;
+    padding: 40px 40px 40px 120px;
+    border-radius: 20px;
+    background-color: white;
+    z-index: 1;
+    @include desktop {
+      padding-left: 80px;
+    }
+    @include tablet {
+      padding-left: 60px;
+    }
+  }
+  &__item-num {
+    position: absolute;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: var(--primary);
+    opacity: 0.15;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-42%);
+    z-index: -1;
+    @include desktop {
+      font-size: 160px;
+      left: -20px;
+    }
+    @include tablet {
+      font-size: 120px;
+    }
+  }
+  &__item-content {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-left: auto;
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+}

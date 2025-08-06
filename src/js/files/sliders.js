@@ -19,21 +19,23 @@ export default function sliders() {
     });
   }
 
-  const aboutSlider = document.querySelector(".s-about__slider");
+  const aboutSliders = document.querySelectorAll(".s-about__slider");
 
-  if (aboutSlider) {
-    const swiper = new Swiper(aboutSlider, {
-      speed: 1000,
-      slidesPerView: "auto",
-      spaceBetween: 24,
-      navigation: {
-        prevEl: ".s-about .slider-btn._prev",
-        nextEl: ".s-about .slider-btn._next",
-      },
-      autoplay: {
-        delay: 3000,
-      },
-    });
+  if (aboutSliders.length) {
+    aboutSliders.forEach(slider => {
+      const swiper = new Swiper(slider, {
+        speed: 1000,
+        slidesPerView: "auto",
+        spaceBetween: 24,
+        navigation: {
+          prevEl: ".s-about .slider-btn._prev",
+          nextEl: ".s-about .slider-btn._next",
+        },
+        autoplay: {
+          delay: 3000,
+        },
+      });
+    })
   }
 
   const teamSlider = document.querySelector(".s-team__slider");

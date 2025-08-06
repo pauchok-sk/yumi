@@ -1,0 +1,112 @@
+.intro-service {
+  position: relative;
+  min-height: 700px;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px 0px;
+  color: var(--white);
+  z-index: 1;
+  @include tablet {
+    padding-top: 90px;
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+  }
+  &::before {
+    background-color: rgba(248, 247, 245, 0.2);
+    z-index: -2;
+  }
+  &::after {
+    background-color: rgba(31, 23, 15, 0.4);
+    z-index: -1;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    @include tablet-min {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: flex-end;
+    gap: 60px;
+    @include laptop-min {
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    @include tablet-min {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__info-body {
+    max-width: 700px;
+    @include laptop-min {
+      width: 100%;
+      max-width: none;
+    }
+    @include tablet-min {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__content {
+    font-size: 18px;
+    line-height: 145%;
+    margin: 0px 0px 20px 0px;
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  &__down-btn {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 12px;
+    font-size: 20px;
+
+    @include hover {
+      svg {
+        transform: translateY(7px);
+      }
+    }
+
+    svg {
+      width: 13px;
+      height: 13px;
+      transition: transform 0.5s ease;
+    }
+  }
+  &__btn-circle {
+    flex-shrink: 0;
+  }
+  &__video-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+}

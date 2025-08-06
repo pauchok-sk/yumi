@@ -110,6 +110,28 @@
     width: 35px;
     height: 35px;
   }
+
+  &._white {
+    background-color: var(--white);
+    color: var(--primary);
+
+    @include hover {
+      color: var(--white);
+      background-color: var(--primary);
+    }
+  }
+  &._shadow {
+    position: relative;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      inset: -7px;
+      border: 7px solid rgba(148, 89, 65, 0.3);
+      z-index: -1;
+    }
+  }
 }
 
 .btn-s {

@@ -8,10 +8,10 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap&_v=20250805121817" rel="stylesheet" />
-	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250805121817">
-	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250805121817">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250805121817" />
+	<link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap&_v=20250806142644" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250806142644">
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250806142644">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250806142644" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -238,7 +238,7 @@
 
 		<section class="s-about sect-m">
 			<div class="container">
-				<div class="s-about__head sect-head">
+				<div class="sect-head">
 					<h2 class="s-title s-about__title">
 						Yumi spa - спа-салон премиум-класса в Казани
 					</h2>
@@ -289,7 +289,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section class="sect-p s-why" style="background: url('img/why-bg.png') center / cover no-repeat;">
 			<div class="container">
 				<h2 class="s-title s-why__title">
@@ -652,12 +651,76 @@
 		</section>
 
 	</main>
+	<div class="modal" id="modal-contr" style="
+    background: url(&quot;img/connect-bg.jpg&quot;) 0 0 / 500px auto repeat;
+  ">
+		<div class="modal__close" data-fancybox-close>
+			<svg>
+				<use xlink:href="img/icons/icons.svg#icon-close-2"></use>
+			</svg>
+		</div>
+		<div class="modal-contr__body">
+			<h3 class="l-title modal-contr__title">
+				Противопоказания
+				<br />
+				к процедуре
+			</h3>
+			<ul class="list modal-contr__list">
+				<li>
+					Но повышение уровня гражданского сознания обеспечивает актуальность
+					соответствующих условий активизации
+				</li>
+				<li>Идейные соображения высшего порядка</li>
+				<li>
+					Таким образом новая модель организационной деятельности представляет собой
+					интересный эксперимент проверки позиций, занимаемых участниками в
+					отношении поставленных задач
+				</li>
+				<li>
+					Идейные соображения высшего порядка, а также дальнейшее развитие различных
+					форм деятельности обеспечивает широкому кругу специалистов
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="modal" id="modal-signup" style="
+    background: url(&quot;img/connect-bg.jpg&quot;) 0 0 / 500px auto repeat;
+  ">
+		<div class="modal__close" data-fancybox-close>
+			<svg>
+				<use xlink:href="img/icons/icons.svg#icon-close-2"></use>
+			</svg>
+		</div>
+		<h3 class="s-title modal__title">Записаться на услугу</h3>
+		<form action="#" class="form modal-order__form">
+			<div class="form__body">
+				<div class="input-control">
+					<input type="text" id="signup-name" class="input" />
+					<label for="signup-name" class="label-input">Имя</label>
+				</div>
+				<div class="input-control">
+					<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+				</div>
+				<input type="checkbox" id="signup-policy" checked class="input-policy" />
+				<label for="signup-policy" class="label-policy">
+					<span>
+						Я соглашаюсь с
+						<a href="#" target="_blank">Политикой обработкиперсональных данных</a>
+						и
+						<a href="#" target="_blank">Политикой конфиденциальности</a>
+					</span>
+				</label>
+			</div>
+			<button class="btn-circle form__btn">Отправить</button>
+		</form>
+	</div>
 	<div class="modal" id="modal-order" style="
     background: url(&quot;img/connect-bg.jpg&quot;) 0 0 / 500px auto repeat;
   ">
 		<div class="modal__close" data-fancybox-close>
 			<svg>
-				<use xlink:href='img/icons/icons.svg#icon-close-2'></use>
+				<use xlink:href="img/icons/icons.svg#icon-close-2"></use>
 			</svg>
 		</div>
 		<h3 class="s-title modal__title">Заказать</h3>
@@ -665,11 +728,11 @@
 		<div class="modal-order__id" id="order-id"></div>
 		<form action="#" class="form modal-order__form">
 			<div class="form__body">
-				<input type="text" id="order-name-input" style="display: none;" />
-				<input type="text" id="order-id-input" style="display: none;" />
+				<input type="text" id="order-name-input" style="display: none" />
+				<input type="text" id="order-id-input" style="display: none" />
 				<div class="input-control">
-					<label for="order-name" class="label-input">Имя</label>
 					<input type="text" id="order-name" class="input" />
+					<label for="order-name" class="label-input">Имя</label>
 				</div>
 				<div class="input-control">
 					<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
@@ -795,11 +858,11 @@
 		</div>
 	</footer>
 
-	<script src="./files/swiper/swiper.min.js?_v=20250805121817"></script>
-	<script src="./files/fancybox/fancybox.min.js?_v=20250805121817"></script>
-
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU&_v=20250805121817" type="text/javascript"></script>
-	<script src="js/app.min.js?_v=20250805121817"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20250806142644"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20250806142644"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20250806142644"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU&_v=20250806142644" type="text/javascript"></script>
+	<script src="js/app.min.js?_v=20250806142644"></script>
 </body>
 
 </html>

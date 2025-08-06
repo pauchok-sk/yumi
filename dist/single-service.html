@@ -1,0 +1,974 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap&_v=20250806142644" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250806142644">
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250806142644">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250806142644" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header _fixed">
+		<div class="header__body">
+			<nav class="header__nav">
+				<a href="#" class="btn-simple" id="services-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-services"></use>
+					</svg>
+					<span>Услуги</span>
+				</a>
+				<ul class="list header__list">
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="header__contacts">
+				<a href="#" class="btn-simple header__btn-anket">Заполнить анкету</a>
+				<div class="header__social">
+					<a href="#" target="_blank" class="header__social-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+						</svg>
+					</a>
+					<a href="#" target="_blank" class="header__social-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="header__contacts-main">
+					<a href="tel:+79033073311" class="header__tel">+7 (903) 307-33-11</a>
+					<div class="header__address">г. Казань, ул. Спартаковская, 14</div>
+				</div>
+			</div>
+			<div class="header__burger-btn" id="burger-open">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</header>
+
+	<div class="burger-overlay" id="burger-overlay"></div>
+	<div class="burger" id="burger">
+		<div class="burger__head">
+			<a href="/" class="burger__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="burger__close" id="burger-close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+		</div>
+		<ul class="list burger__list">
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Прайс-лист</a></li>
+			<li><a href="#">Акции</a></li>
+			<li><a href="#">О нас</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<div class="burger__contacts">
+			<a href="#" class="btn-simple burger__btn-anket _dark">Заполнить анкету</a>
+			<div class="burger__social">
+				<a href="#" target="_blank" class="burger__social-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+					</svg>
+				</a>
+				<a href="#" target="_blank" class="burger__social-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="burger__contacts-main">
+				<a href="tel:+79033073311" class="burger__tel">+7 (903) 307-33-11</a>
+				<div class="burger__address">г. Казань, ул. Спартаковская, 14</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="services-overlay" id="services-overlay"></div>
+	<div class="services" id="services">
+		<div class="services__wrapper">
+			<div class="services__container">
+				<div class="services__item">
+					<h5 class="services__title">Для женщин</h5>
+					<ul class="list services__list">
+						<li><a href="#">Лимфодренажный массаж</a></li>
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+						<li><a href="#">Perfect body</a></li>
+						<li><a href="#">Коррекция фигуры</a></li>
+					</ul>
+				</div>
+				<div class="services__item">
+					<h5 class="services__title">Для мужчин</h5>
+					<ul class="list services__list">
+						<li><a href="#">Лимфодренажный массаж</a></li>
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+						<li><a href="#">Коррекция фигуры</a></li>
+					</ul>
+				</div>
+				<div class="services__item">
+					<h5 class="services__title">Для детей</h5>
+					<ul class="list services__list">
+						<li><a href="#">Лимфодренажный массаж</a></li>
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+					</ul>
+				</div>
+				<div class="services__item">
+					<h5 class="services__title">Для двоих</h5>
+					<ul class="list services__list">
+						<li><a href="#">Массаж всего тела</a></li>
+						<li><a href="#">Soft skin</a></li>
+						<li><a href="#">Perfect body</a></li>
+						<li><a href="#">Коррекция фигуры</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main>
+		<section class="intro-service" style="
+    background: url(&quot;img/intro-service.jpg&quot;) center / cover no-repeat;
+  ">
+			<div class="container">
+				<div class="intro-service__wrapper">
+					<div class="intro-service__info">
+						<div class="intro-service__info-body">
+							<p class="intro-service__content">
+								Сложно сказать, почему элементы политического процесса могут быть
+								заблокированы в рамках своих собственных рациональных ограничений
+							</p>
+							<h1 class="m-title intro-service__title">Perfect body</h1>
+							<a href="#s-service-about" data-anchor class="intro-service__down-btn">
+								<span>Об услуге</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+								</svg>
+							</a>
+						</div>
+						<a href="#modal-signup" data-fancybox class="intro-service__btn-circle btn-circle">
+							Записаться на услугу
+						</a>
+					</div>
+					<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox class="intro-service__video-btn">
+						<div class="btn-play _white _shadow">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-play"></use>
+							</svg>
+						</div>
+						<span>
+							Видео
+							<br />
+							о процедуре
+						</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-spec sect-p">
+			<div class="container">
+				<div class="s-spec__wrapper">
+					<div class="s-spec__item">
+						<div class="s-spec__item-title">Стоимость</div>
+						<div class="s-spec__item-value">от 5 000 руб.</div>
+					</div>
+					<div class="s-spec__item">
+						<div class="s-spec__item-title">Длитетельность</div>
+						<div class="s-spec__item-value">60 - 90 мин.</div>
+					</div>
+					<div class="s-spec__item">
+						<div class="s-spec__item-title">Формат</div>
+						<div class="s-spec__item-value">Для одного / Для двоих</div>
+					</div>
+					<div class="s-spec__item">
+						<div class="s-spec__item-title">Стоимость</div>
+						<a href="#modal-contr" data-fancybox class="s-spec__item-value">Есть</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s-order sect-p" style="
+    background: url(&quot;img/order-bg.jpg&quot;) center / cover no-repeat;
+  ">
+			<div class="container">
+				<div class="s-order__body">
+					<div class="s-order__body-container">
+						<h2 class="s-title s-order__title">Запишитесь на услугу</h2>
+						<p class="s-order__content">
+							Оставьте заявку и мы свяжемся с Вами в ближайшее время
+						</p>
+						<form action="#" class="s-order__form">
+							<div class="s-order__form-grid">
+								<div class="input-control">
+									<input type="text" id="order-service-name" class="input" />
+									<label for="order-service-name" class="label-input">Имя</label>
+								</div>
+								<div class="input-control">
+									<input type="text" id="order-service-date" class="input" />
+									<label for="order-service-date" class="label-input">
+										Укажите желаемую дату
+									</label>
+								</div>
+								<div class="input-control">
+									<input type="tel" id="order-service-tel" placeholder="+7 (___) ___-__-__" class="input" />
+								</div>
+								<input type="checkbox" id="order-policy" checked class="input-policy" />
+								<label for="order-policy" class="label-policy">
+									<span>
+										Я соглашаюсь с
+										<a href="#" target="_blank">
+											Политикой обработкиперсональных данных
+										</a>
+										и
+										<a href="#" target="_blank">Политикой конфиденциальности</a>
+									</span>
+								</label>
+							</div>
+							<button class="btn-circle _outline">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-service-about sect-m" id="s-service-about">
+			<div class="container tabs">
+				<div class="sect-head">
+					<h2 class="s-title">Об услуге</h2>
+					<div class="s-service-about__tabs-nav">
+						<button data-tab-btn="tab-1" class="btn-s _active">Этапы</button>
+						<button data-tab-btn="tab-2" class="btn-s">Эффект</button>
+						<button data-tab-btn="tab-3" class="btn-s">Противопоказания</button>
+					</div>
+				</div>
+				<div data-tab="tab-1" style="opacity: 1" class="_active">
+					<div class="s-service-about__grid">
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">1</div>
+							<div class="s-service-about__item-content">
+								Массаж головы по Китайской технологии
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">2</div>
+							<div class="s-service-about__item-content">
+								Аппаратный массаж головы
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">3</div>
+							<div class="s-service-about__item-content">
+								Массаж головы гребнями
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">4</div>
+							<div class="s-service-about__item-content">
+								Пенный массаж (голова, швз)
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">5</div>
+							<div class="s-service-about__item-content">
+								Пенный массаж декольте
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">6</div>
+							<div class="s-service-about__item-content">
+								Спа уход для волос (очищение, питание)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-tab="tab-2" style="opacity: 0">
+					<div class="s-service-about__grid">
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">1</div>
+							<div class="s-service-about__item-content">
+								Массаж головы по Китайской технологии
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">2</div>
+							<div class="s-service-about__item-content">
+								Аппаратный массаж головы
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">3</div>
+							<div class="s-service-about__item-content">
+								Массаж головы гребнями
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">4</div>
+							<div class="s-service-about__item-content">
+								Пенный массаж (голова, швз)
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">5</div>
+							<div class="s-service-about__item-content">
+								Пенный массаж декольте
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">6</div>
+							<div class="s-service-about__item-content">
+								Спа уход для волос (очищение, питание)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-tab="tab-3" style="opacity: 0">
+					<div class="s-service-about__grid">
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">1</div>
+							<div class="s-service-about__item-content">
+								Массаж головы по Китайской технологии
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">2</div>
+							<div class="s-service-about__item-content">
+								Аппаратный массаж головы
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">3</div>
+							<div class="s-service-about__item-content">
+								Массаж головы гребнями
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">4</div>
+							<div class="s-service-about__item-content">
+								Пенный массаж (голова, швз)
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">5</div>
+							<div class="s-service-about__item-content">
+								Пенный массаж декольте
+							</div>
+						</div>
+						<div class="s-service-about__item">
+							<div class="s-service-about__item-num">6</div>
+							<div class="s-service-about__item-content">
+								Спа уход для волос (очищение, питание)
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-price sect-m">
+			<div data-count-show="4" class="container container-more">
+				<div class="sect-head">
+					<h2 class="s-title">Прайс-лист</h2>
+				</div>
+				<div class="s-price__table">
+					<div class="s-price__table-head">
+						<div class="s-price__table-cell">Название услуги</div>
+						<div class="s-price__table-cell">Стоимость / длительность</div>
+					</div>
+					<div data-more-item style="transform: translateY(0); opacity: 1; display: block;">
+						<div class="s-price__table-row">
+							<div class="s-price__table-cell">
+								Антицеллюлитный моделирующий массаж
+							</div>
+							<div class="s-price__table-cell">2 000 руб. / 60 мин.</div>
+						</div>
+					</div>
+					<div data-more-item style="transform: translateY(0); opacity: 1; display: block;">
+						<div class="s-price__table-row">
+							<div class="s-price__table-cell">Скрабирование кофейным суфле</div>
+							<div class="s-price__table-cell">1 000 руб. / 50 мин.</div>
+						</div>
+					</div>
+					<div data-more-item style="transform: translateY(0); opacity: 1; display: block;">
+						<div class="s-price__table-row">
+							<div class="s-price__table-cell">
+								Антицеллюлитный моделирующий массаж
+							</div>
+							<div class="s-price__table-cell">2 000 руб. / 60 мин.</div>
+						</div>
+					</div>
+					<div data-more-item style="transform: translateY(0); opacity: 1; display: block;">
+						<div class="s-price__table-row">
+							<div class="s-price__table-cell">Скрабирование кофейным суфле</div>
+							<div class="s-price__table-cell">1 000 руб. / 50 мин.</div>
+						</div>
+					</div>
+					<div data-more-item>
+						<div class="s-price__table-row">
+							<div class="s-price__table-cell">
+								Антицеллюлитный моделирующий массаж
+							</div>
+							<div class="s-price__table-cell">2 000 руб. / 60 мин.</div>
+						</div>
+					</div>
+					<div data-more-item>
+						<div class="s-price__table-row">
+							<div class="s-price__table-cell">Скрабирование кофейным суфле</div>
+							<div class="s-price__table-cell">1 000 руб. / 50 мин.</div>
+						</div>
+					</div>
+					<div data-more-item>
+						<div class="s-price__table-row">
+							<div class="s-price__table-cell">
+								Антицеллюлитный моделирующий массаж
+							</div>
+							<div class="s-price__table-cell">2 000 руб. / 60 мин.</div>
+						</div>
+					</div>
+					<div data-more-item>
+						<div class="s-price__table-row">
+							<div class="s-price__table-cell">Скрабирование кофейным суфле</div>
+							<div class="s-price__table-cell">1 000 руб. / 50 мин.</div>
+						</div>
+					</div>
+					<div data-more-item>
+						<div class="s-price__table-row">
+							<div class="s-price__table-cell">
+								Антицеллюлитный моделирующий массаж
+							</div>
+							<div class="s-price__table-cell">2 000 руб. / 60 мин.</div>
+						</div>
+					</div>
+					<div data-more-item>
+						<div class="s-price__table-row">
+							<div class="s-price__table-cell">Скрабирование кофейным суфле</div>
+							<div class="s-price__table-cell">1 000 руб. / 50 мин.</div>
+						</div>
+					</div>
+				</div>
+				<button data-more-btn class="btn-s _satin s-price__btn-more">Показать еще</button>
+			</div>
+		</section>
+
+		<section class="s-team sect-p" style="
+          background: url(&quot;img/team.jpg&quot;) center / cover no-repeat;
+        ">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">Кто проводит услугу</h2>
+				</div>
+				<div class="s-team__slider-wrapper">
+					<div class="slider-btn _prev _linear">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+						</svg>
+					</div>
+					<div class="slider-btn _next _linear">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</div>
+					<div class="swiper s-team__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card-spec">
+									<img src="img/spec-1.jpg" alt="image" class="card-spec__img" />
+									<img src="img/spec-2.jpg" alt="image" class="card-spec__img" />
+									<div class="card-spec__body">
+										<h5 class="card-spec__title">Алина Иванова</h5>
+										<div class="card-spec__status">Генеральный директор</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-pagination _mob"></div>
+			</div>
+		</section>
+		<section class="s-about sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title s-about__title">
+						Что вас ждет
+					</h2>
+				</div>
+				<div class="s-about__slider-wrapper">
+					<div class="slider-btn _prev _linear">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+						</svg>
+					</div>
+					<div class="slider-btn _next _linear">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</div>
+					<div class="swiper s-about__slider">
+						<div class="swiper-wrapper">
+							<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox="about-gallery" class="swiper-slide s-about__slide _tr">
+								<div class="btn-play">
+									<svg>
+										<use xlink:href='img/icons/icons.svg#icon-play'></use>
+									</svg>
+								</div>
+								<img src="img/about.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _tl _tr">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _br">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _bl">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+							<a href="img/about.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _tl">
+								<img src="img/about.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s-reviews sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">Впечатления о нас</h2>
+				</div>
+			</div>
+		</section>
+		<section class="s-about sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title s-about__title">
+						Yumi spa - спа-салон премиум-класса в Казани
+					</h2>
+					<p class="content">
+						Погрузитесь в мир безмятежности с нашими спа-программами, где каждая
+						процедура для лица, волос и тела – это симфония чувственного
+						наслаждения. Путешествие начинается с ароматерапии, сотканной из
+						тончайших нитей натуральных масел, и умиротворяющего акустического фона.
+						Затем, словно ласковое прикосновение ветра, следует мягкий, но глубокий
+						массаж головы, шеи и плеч. Под чуткими руками мастера пробуждаются
+						ключевые точки и меридианы, оживляется лимфоток, и кровь начинает свой
+						животворный танец.
+					</p>
+				</div>
+				<div class="s-about__slider-wrapper">
+					<div class="slider-btn _prev _linear">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+						</svg>
+					</div>
+					<div class="slider-btn _next _linear">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</div>
+					<div class="swiper s-about__slider">
+						<div class="swiper-wrapper">
+							<a href="img/about.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _tr">
+								<img src="img/about.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _br">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _bl">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+							<a href="img/about.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide _tl">
+								<img src="img/about.jpg" alt="image" />
+							</a>
+							<a href="img/about-2.jpg" data-fancybox="about-gallery" class="swiper-slide s-about__slide">
+								<img src="img/about-2.jpg" alt="image" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sect-p s-why" style="background: url('img/why-bg.png') center / cover no-repeat;">
+			<div class="container">
+				<h2 class="s-title s-why__title">
+					Почему
+					<br />
+					выбирают нас
+				</h2>
+				<div class="s-why__grid">
+					<article class="s-why__item">
+						<img src="img/why-icon.png" alt="icon" class="s-why__item-icon" />
+						<h5 class="s-why__item-title">Премиум обслуживание</h5>
+						<p class="s-why__item-content">
+							Повседневная практика показывает, что граница обучения кадров влечет
+							за собой процесс внедрения и модернизации первоочередных требований.
+						</p>
+					</article>
+					<article class="s-why__item">
+						<img src="img/why-icon.png" alt="icon" class="s-why__item-icon" />
+						<h5 class="s-why__item-title">Премиум обслуживание</h5>
+						<p class="s-why__item-content">
+							Повседневная практика показывает, что граница обучения кадров влечет
+							за собой процесс внедрения
+						</p>
+					</article>
+					<article class="s-why__item">
+						<img src="img/why-icon.png" alt="icon" class="s-why__item-icon" />
+						<h5 class="s-why__item-title">Премиум обслуживание</h5>
+						<p class="s-why__item-content">
+							Повседневная практика показывает, что граница обучения кадров влечет
+							за собой процесс внедрения и модернизации первоочередных требований.
+						</p>
+					</article>
+					<article class="s-why__item">
+						<img src="img/why-icon.png" alt="icon" class="s-why__item-icon" />
+						<h5 class="s-why__item-title">Премиум обслуживание</h5>
+						<p class="s-why__item-content">
+							Повседневная практика показывает, что граница обучения кадров влечет
+							за собой процесс внедрения и модернизации первоочередных требований.
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-connect sect-p">
+			<div class="container">
+				<div class="s-connect__wrapper">
+					<img src="img/connect.jpg" alt="image" class="s-connect__img" />
+					<div class="s-connect__body" style="
+          background: url(&quot;img/connect-bg.jpg&quot;) 0 0 / 500px auto
+            repeat;
+        ">
+						<h2 class="s-title s-connect__title">Свяжитесь с нами</h2>
+						<form action="#" class="form s-connect__form">
+							<div class="form__body">
+								<div class="input-control">
+									<label for="connect-name" class="label-input">Имя</label>
+									<input type="text" id="connect-name" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+								</div>
+								<input type="checkbox" id="connect-policy" checked class="input-policy" />
+								<label for="connect-policy" class="label-policy">
+									<span>
+										Я соглашаюсь с
+										<a href="#" target="_blank">
+											Политикой обработкиперсональных данных
+										</a>
+										и
+										<a href="#" target="_blank">Политикой конфиденциальности</a>
+									</span>
+								</label>
+							</div>
+							<button class="btn-circle _outline form__btn">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<div class="modal" id="modal-contr" style="
+    background: url(&quot;img/connect-bg.jpg&quot;) 0 0 / 500px auto repeat;
+  ">
+		<div class="modal__close" data-fancybox-close>
+			<svg>
+				<use xlink:href="img/icons/icons.svg#icon-close-2"></use>
+			</svg>
+		</div>
+		<div class="modal-contr__body">
+			<h3 class="l-title modal-contr__title">
+				Противопоказания
+				<br />
+				к процедуре
+			</h3>
+			<ul class="list modal-contr__list">
+				<li>
+					Но повышение уровня гражданского сознания обеспечивает актуальность
+					соответствующих условий активизации
+				</li>
+				<li>Идейные соображения высшего порядка</li>
+				<li>
+					Таким образом новая модель организационной деятельности представляет собой
+					интересный эксперимент проверки позиций, занимаемых участниками в
+					отношении поставленных задач
+				</li>
+				<li>
+					Идейные соображения высшего порядка, а также дальнейшее развитие различных
+					форм деятельности обеспечивает широкому кругу специалистов
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="modal" id="modal-signup" style="
+    background: url(&quot;img/connect-bg.jpg&quot;) 0 0 / 500px auto repeat;
+  ">
+		<div class="modal__close" data-fancybox-close>
+			<svg>
+				<use xlink:href="img/icons/icons.svg#icon-close-2"></use>
+			</svg>
+		</div>
+		<h3 class="s-title modal__title">Записаться на услугу</h3>
+		<form action="#" class="form modal-order__form">
+			<div class="form__body">
+				<div class="input-control">
+					<input type="text" id="signup-name" class="input" />
+					<label for="signup-name" class="label-input">Имя</label>
+				</div>
+				<div class="input-control">
+					<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+				</div>
+				<input type="checkbox" id="signup-policy" checked class="input-policy" />
+				<label for="signup-policy" class="label-policy">
+					<span>
+						Я соглашаюсь с
+						<a href="#" target="_blank">Политикой обработкиперсональных данных</a>
+						и
+						<a href="#" target="_blank">Политикой конфиденциальности</a>
+					</span>
+				</label>
+			</div>
+			<button class="btn-circle form__btn">Отправить</button>
+		</form>
+	</div>
+	<div class="modal" id="modal-order" style="
+    background: url(&quot;img/connect-bg.jpg&quot;) 0 0 / 500px auto repeat;
+  ">
+		<div class="modal__close" data-fancybox-close>
+			<svg>
+				<use xlink:href="img/icons/icons.svg#icon-close-2"></use>
+			</svg>
+		</div>
+		<h3 class="s-title modal__title">Заказать</h3>
+		<div class="modal-order__type" id="order-name"></div>
+		<div class="modal-order__id" id="order-id"></div>
+		<form action="#" class="form modal-order__form">
+			<div class="form__body">
+				<input type="text" id="order-name-input" style="display: none" />
+				<input type="text" id="order-id-input" style="display: none" />
+				<div class="input-control">
+					<input type="text" id="order-name" class="input" />
+					<label for="order-name" class="label-input">Имя</label>
+				</div>
+				<div class="input-control">
+					<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+				</div>
+				<input type="checkbox" id="order-policy" checked class="input-policy" />
+				<label for="order-policy" class="label-policy">
+					<span>
+						Я соглашаюсь с
+						<a href="#" target="_blank">Политикой обработкиперсональных данных</a>
+						и
+						<a href="#" target="_blank">Политикой конфиденциальности</a>
+					</span>
+				</label>
+			</div>
+			<button class="btn-circle form__btn">Отправить</button>
+		</form>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__main footer__item">
+					<a href="/" class="footer__logo">
+						<img src="img/logo.svg" alt="logo" />
+					</a>
+					<div class="footer__main-body">
+						<div class="footer__main-contacts">
+							<div class="footer__contacts-item">
+								<a href="tel:+79033073311" class="footer__tel">
+									+7 (903) 307-33-11
+								</a>
+								<a href="mailto:evgewa_loy@hotmail.com" class="footer__mail">
+									evgewa_loy@hotmail.com
+								</a>
+								<div class="footer__social">
+									<a href="#" target="_blank" class="footer__social-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+										</svg>
+									</a>
+									<a href="#" target="_blank" class="footer__social-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+										</svg>
+									</a>
+									<a href="#" target="_blank" class="footer__social-btn">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-vk"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="footer__contacts-item">
+								<div class="footer__contacts-address">
+									Казань, ул. Спартаковская, 14
+								</div>
+								<div class="footer__work-time">
+									Пн - Пт: с 09:00 до 19:00, Сб - Вс: с 10:00 до 18:00
+								</div>
+							</div>
+						</div>
+						<div class="footer__nav">
+							<div class="footer__nav-item">
+								<h5 class="footer__nav-title">О компании</h5>
+								<ul class="list footer__nav-list">
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Реквизиты</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="footer__nav-item">
+								<h5 class="footer__nav-title">Spa-программы</h5>
+								<ul class="list footer__nav-list">
+									<li><a href="#">Массаж всего тела</a></li>
+									<li><a href="#">Soft skin</a></li>
+									<li><a href="#">Perfect body</a></li>
+								</ul>
+							</div>
+							<div class="footer__nav-item">
+								<h5 class="footer__nav-title">Полезное</h5>
+								<ul class="list footer__nav-list">
+									<li><a href="#">Акции</a></li>
+									<li><a href="#">Услуги</a></li>
+									<li><a href="#">Оформление сертификата</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__item footer__info">
+					<div class="footer__content">
+						<p>© 2025. Yumi Spa. Все права защищены</p>
+						<p>
+							Обращаем Ваше внимание на то, что данный интернет-сайт носит
+							исключительно информационный характер и ни при каких условиях не
+							является публичной офертой. Для получения подробной информации о
+							стоимости, наименовании и сроках оказания услуг, пожалуйста,
+							обращайтесь по контактным телефонам. Конкретный перечень услуг и
+							порядок их предоставления определяется в договоре оказания услуг,
+							оформляемым между спа-салоном и пациентом
+						</p>
+						<p>
+							ИП Лой Евгения Георгиевна, ИНН: 500722343522, ОГРНИП:
+							325169000049433
+						</p>
+						<p>Медицинская лицензия №103131</p>
+					</div>
+					<ul class="list footer__info-list">
+						<li><a href="#" target="_blank">Публичная оферта</a></li>
+						<li>
+							<a href="#" target="_blank">
+								Правила обработки персональных данных
+							</a>
+						</li>
+					</ul>
+					<a href="https://qorix.ru/" target="_blank" class="footer__dev">
+						<span>Разработка сайта —</span>
+						<img src="img/qorix.svg" alt="logo" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/swiper/swiper.min.js?_v=20250806142644"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20250806142644"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20250806142644"></script>
+	<script src="js/app.min.js?_v=20250806142644"></script>
+</body>
+
+</html>

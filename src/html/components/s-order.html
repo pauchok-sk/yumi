@@ -1,0 +1,56 @@
+<section
+  class="s-order sect-p"
+  style="
+    background: url(&quot;@img/order-bg.jpg&quot;) center / cover no-repeat;
+  "
+>
+  <div class="container">
+    <div class="s-order__body">
+      <div class="s-order__body-container">
+        <h2 class="s-title s-order__title">Запишитесь на услугу</h2>
+        <p class="s-order__content">
+          Оставьте заявку и мы свяжемся с Вами в ближайшее время
+        </p>
+        <form action="#" class="s-order__form">
+          <div class="s-order__form-grid">
+            <div class="input-control">
+              <input type="text" id="order-service-name" class="input" />
+              <label for="order-service-name" class="label-input">Имя</label>
+            </div>
+            <div class="input-control">
+              <input type="text" id="order-service-date" class="input" />
+              <label for="order-service-date" class="label-input">
+                Укажите желаемую дату
+              </label>
+            </div>
+            <div class="input-control">
+              <input
+                type="tel"
+                id="order-service-tel"
+                placeholder="+7 (___) ___-__-__"
+                class="input"
+              />
+            </div>
+            <input
+              type="checkbox"
+              id="order-policy"
+              checked
+              class="input-policy"
+            />
+            <label for="order-policy" class="label-policy">
+              <span>
+                Я соглашаюсь с
+                <a href="#" target="_blank">
+                  Политикой обработкиперсональных данных
+                </a>
+                и
+                <a href="#" target="_blank">Политикой конфиденциальности</a>
+              </span>
+            </label>
+          </div>
+          <button class="btn-circle _outline">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

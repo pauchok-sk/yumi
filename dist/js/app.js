@@ -1,5 +1,28 @@
 (() => {
     "use strict";
+    function anchors_anchors() {
+        const burger = document.querySelector("#burger");
+        const burgerOverlay = document.querySelector("#burger-overlay");
+        document.querySelectorAll("[data-anchor]").forEach(link => {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                let href = this.getAttribute("href").substring(1);
+                const scrollTarget = document.getElementById(href);
+                if (scrollTarget) {
+                    window.scrollBy({
+                        top: scrollTarget.getBoundingClientRect().top,
+                        behavior: "smooth"
+                    });
+                    handlerBurgerClose();
+                }
+            });
+            function handlerBurgerClose() {
+                burger.classList.remove("_open");
+                burgerOverlay.classList.remove("_active");
+                document.body.classList.remove("body-hidden");
+            }
+        });
+    }
     function burger() {
         const burgerOpen = document.querySelector("#burger-open");
         const burgerClose = document.querySelector("#burger-close");
@@ -44,6 +67,11 @@
                 lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
             });
         }
+    }
+    function inputmask() {
+        const inputs = document.querySelectorAll('input[type="tel"]');
+        const im = new Inputmask("+7 (999) 999-99-99");
+        im.mask(inputs);
     }
     function loader() {
         const loader = document.querySelector(".loader");
@@ -93,6 +121,27 @@
             }
             ymaps.ready(init);
         }
+    }
+    function more() {
+        const containers = document.querySelectorAll(".container-more");
+        if (containers.length) containers.forEach(container => {
+            const btn = container.querySelector("[data-more-btn]");
+            const count = +container.dataset.countShow;
+            const lengthItems = container.querySelectorAll("[data-more-item]").length;
+            if (count >= lengthItems && btn) btn.remove();
+            btn.addEventListener("click", () => {
+                const items = container.querySelectorAll("[data-more-item]");
+                const hideItems = Array.from(items).filter(item => window.getComputedStyle(item).display === "none");
+                hideItems.splice(0, count).forEach(item => {
+                    item.style.display = "block";
+                    setTimeout(() => {
+                        item.style.opacity = 1;
+                        item.style.transform = "translateY(0)";
+                    });
+                });
+                if (hideItems.length <= 0) btn.remove();
+            });
+        });
     }
     function order() {
         const buttons = document.querySelectorAll(".card-product__btn");
@@ -149,9 +198,9 @@
                 }
             });
         }
-        const aboutSlider = document.querySelector(".s-about__slider");
-        if (aboutSlider) {
-            new Swiper(aboutSlider, {
+        const aboutSliders = document.querySelectorAll(".s-about__slider");
+        if (aboutSliders.length) aboutSliders.forEach(slider => {
+            new Swiper(slider, {
                 speed: 1e3,
                 slidesPerView: "auto",
                 spaceBetween: 24,
@@ -163,7 +212,7 @@
                     delay: 3e3
                 }
             });
-        }
+        });
         const teamSlider = document.querySelector(".s-team__slider");
         if (teamSlider) {
             new Swiper(teamSlider, {
@@ -388,6 +437,28 @@
             });
         }
     }
+    function tabs() {
+        const buttons = document.querySelectorAll("[data-tab-btn]");
+        if (buttons.length) buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const container = btn.closest(".tabs");
+                const tabId = btn.dataset.tabBtn;
+                const allButtons = container.querySelectorAll("[data-tab-btn]");
+                const allTabs = container.querySelectorAll("[data-tab]");
+                const currentTab = container.querySelector(`[data-tab="${tabId}"]`);
+                allTabs.forEach(t => {
+                    t.classList.remove("_active");
+                    t.style.opacity = 0;
+                });
+                currentTab.classList.add("_active");
+                setTimeout(() => {
+                    currentTab.style.opacity = 1;
+                }, 10);
+                allButtons.forEach(b => b.classList.remove("_active"));
+                btn.classList.add("_active");
+            });
+        });
+    }
     spoller();
     loader();
     burger();
@@ -396,6 +467,10 @@
     map();
     headerScroll();
     order();
+    inputmask();
+    anchors_anchors();
+    tabs();
+    more();
     Fancybox.bind("[data-fancybox]", {
         closeButton: false
     });
