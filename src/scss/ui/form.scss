@@ -133,3 +133,46 @@
     }
   }
 }
+
+.input-radio {
+  display: none;
+
+  &:checked + label {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.label-radio {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+
+  font-size: 16px;
+  line-height: 120%;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid var(--dark);
+
+    transition: background-color .5s ease;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    left: 3px;
+    opacity: 0;
+    transition: opacity .5s ease;
+  }
+}

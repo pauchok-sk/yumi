@@ -1,0 +1,116 @@
+.s-profile {
+  position: relative;
+  z-index: 1;
+  &__form {
+  }
+  &__form-container {
+    width: 895px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  &__form-item {
+    &:not(:last-child) {
+      padding-bottom: 70px;
+      border-bottom: 1px solid rgba(148, 89, 65, 0.05);
+    }
+    &:not(:first-child) {
+      padding-top: 70px;
+    }
+
+    @include laptop-middle {
+      &:not(:last-child) {
+        padding-bottom: 50px;
+      }
+      &:not(:first-child) {
+        padding-top: 50px;
+      }
+    }
+    @include tablet-min {
+      &:not(:last-child) {
+        padding-bottom: 30px;
+      }
+      &:not(:first-child) {
+        padding-top: 30px;
+      }
+    }
+  }
+  &__item-title {
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin: 0px 0px 40px 0px;
+    @include laptop-min {
+      font-size: 32px;
+    }
+    @include tablet {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+  }
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .input {
+      width: 415px;
+      max-width: 100%;
+
+      &._full {
+        width: 100%;
+      }
+    }
+    .label-policy {
+      width: 415px;
+      max-width: 100%;
+    }
+  }
+  &__block-title {
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 5px;
+  }
+  &__block-content {
+    font-size: 16px;
+    line-height: 140%;
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+  &__form-submit {
+    margin-top: 70px;
+    @include laptop-min {
+      margin-top: 50px;
+    }
+    @include tablet {
+      margin-top: 30px;
+    }
+    @include tablet-min {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__img {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    @include laptop-min {
+      width: 400px;
+    }
+    @include tablet-min {
+      width: 100%;
+      position: static;
+      margin-top: 20px;
+    }
+  }
+}

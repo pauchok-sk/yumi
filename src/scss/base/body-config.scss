@@ -41,6 +41,10 @@
   @include tablet-min {
     padding: 60px 0px;
   }
+
+   &._pt-off {
+    padding-top: 0 !important;
+  }
 }
 
 .sect-head {
