@@ -62,6 +62,15 @@
     color: inherit;
     opacity: 0.5;
   }
+
+  &[type="number"]::-webkit-inner-spin-button,
+  &[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
 }
 .input-policy {
   display: none;
@@ -99,6 +108,28 @@
 
     @include hover {
       color: var(--dark);
+    }
+  }
+}
+
+.form-content {
+  font-size: 14px;
+  line-height: 120%;
+
+  color: rgba(79, 75, 72, 0.5);
+
+  a {
+    display: block;
+    width: fit-content;
+    text-decoration: underline;
+    transition: color 0.5s ease;
+
+    @include hover {
+      color: var(--dark);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
     }
   }
 }

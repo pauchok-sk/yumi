@@ -1,0 +1,143 @@
+.s-certificate {
+  &__form {
+    
+  }
+  &__form-item {
+    display: flex;
+    align-items: start;
+    gap: 40px;
+
+    &:not(:last-child) {
+      padding-bottom: 70px;
+      border-bottom: 1px solid rgba(148, 89, 65, 0.05);
+    }
+    &:not(:first-child) {
+      padding-top: 70px;
+    }
+
+    @include laptop-middle {
+      &:not(:last-child) {
+        padding-bottom: 50px;
+      }
+      &:not(:first-child) {
+        padding-top: 50px;
+      }
+    }
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+    @include tablet-min {
+      &:not(:last-child) {
+        padding-bottom: 30px;
+      }
+      &:not(:first-child) {
+        padding-top: 30px;
+      }
+
+      &:last-child {
+        .s-certificate__head {
+          display: none;
+        }
+      }
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    width: 415px;
+    flex-shrink: 0;
+    @include laptop-middle {
+      width: 350px;
+    }
+    @include laptop-min {
+      width: 100%;
+    }
+  }
+  &__head-num {
+    @include flex-center;
+    width: 80px;
+    height: 80px;
+    background-color: var(--satin);
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--primary);
+  }
+  &__head-title {
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin: 0;
+    @include laptop-middle {
+      font-size: 20px;
+    }
+  }
+  &__form-content {
+    flex: 0 1 870px;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__form-certificates {
+    margin-bottom: 40px;
+  }
+  &__radio-input {
+    display: none;
+
+    &:checked + label {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  &__radio-label {
+    position: relative;
+    max-width: 780px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    @include hover {
+      &::before {
+        opacity: 0.5;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      border: 4px solid rgba(148, 89, 65, 0.7);
+      opacity: 0;
+      border-radius: 15px;
+      transition: opacity 0.3s ease;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    @include tablet-min {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+}

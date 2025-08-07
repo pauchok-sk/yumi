@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   gap: 56px;
   row-gap: 30px;
-  margin: 70px 0px; 
+  margin: 70px 0px;
   @include laptop-min {
     gap: 32px;
     row-gap: 20px;
@@ -31,7 +31,14 @@
       width: 100vw;
       margin-left: -15px;
       padding: 0 15px;
-
+    }
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 120%;
+    margin: 50px 0px 0px 0px;
+    @include tablet {
+      margin-top: 30px;
     }
   }
 }

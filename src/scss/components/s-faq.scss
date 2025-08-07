@@ -1,0 +1,96 @@
+.s-faq {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--satin);
+  z-index: 1;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    z-index: -1;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 10px;
+    @include laptop-min {
+      grid-template-columns: 1fr
+    }
+  }
+  &__spoller {
+  }
+  &__spoller-btn {
+    @include flex-between;
+    cursor: pointer;
+    gap: 16px;
+    padding: 15px 30px;
+    border-radius: 16px;
+    background-color: white;
+
+    font-size: 18px;
+    line-height: 140%;
+
+    transition:
+      color 0.5s ease,
+      background-color 0.5s ease;
+
+    @include hover {
+      background-color: var(--primary);
+      color: var(--white);
+
+      svg {
+        color: var(--white);
+      }
+    }
+
+    @include laptop-middle {
+      padding: 16px 20px;
+      font-size: 16px;
+    }
+
+    &._spoller-active {
+      background-color: var(--primary);
+      color: var(--white);
+
+      svg {
+        color: var(--white);
+        transform: rotate(45deg);
+      }
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: var(--primary);
+      flex-shrink: 0;
+
+      transition:
+        color 0.5s ease,
+        transform 0.5s ease;
+    }
+  }
+  &__spoller-body {
+    padding: 18px 30px;
+    border: 2px solid #945941;
+    border-radius: 16px;
+    background-color: white;
+
+    font-size: 16px;
+    line-height: 140%;
+
+    @include laptop-middle {
+      padding: 16px 20px;
+    }
+
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+}
