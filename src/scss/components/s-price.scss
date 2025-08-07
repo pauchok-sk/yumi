@@ -1,4 +1,28 @@
 .s-price {
+  &__body {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+    .s-price__table-row {
+      &:nth-child(even) {
+        background-color: transparent;
+      }
+    }
+  }
+  &__body-item {
+    &:not(:last-child) {
+      margin-bottom: 70px;
+      @include laptop-min {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__item-title {
+    margin-bottom: 40px;
+    @include laptop-min {
+      margin-bottom: 30px;
+    }
+  }
   &__table {
     width: 1400px;
     max-width: 100%;

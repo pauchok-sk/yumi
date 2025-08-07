@@ -3,9 +3,12 @@
     function anchors_anchors() {
         const burger = document.querySelector("#burger");
         const burgerOverlay = document.querySelector("#burger-overlay");
-        document.querySelectorAll("[data-anchor]").forEach(link => {
+        const anchors = document.querySelectorAll("[data-anchor]");
+        if (anchors.length) anchors.forEach(link => {
             link.addEventListener("click", function(e) {
                 e.preventDefault();
+                anchors.forEach(a => a.classList.remove("_active"));
+                link.classList.add("_active");
                 let href = this.getAttribute("href").substring(1);
                 const scrollTarget = document.getElementById(href);
                 if (scrollTarget) {

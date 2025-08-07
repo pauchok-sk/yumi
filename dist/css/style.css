@@ -1798,6 +1798,20 @@ img {
   text-transform: uppercase;
   margin-left: auto
 }
+.s-price__body {
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto
+}
+.s-price__body .s-price__table-row:nth-child(even) {
+  background-color: rgba(0,0,0,0)
+}
+.s-price__body-item:not(:last-child) {
+  margin-bottom: 70px
+}
+.s-price__item-title {
+  margin-bottom: 40px
+}
 .s-price__table {
   width: 1400px;
   max-width: 100%;
@@ -2605,6 +2619,12 @@ img {
   .s-order__form-grid {
     flex: none;
     width: 100%
+  }
+  .s-price__body-item:not(:last-child) {
+    margin-bottom: 40px
+  }
+  .s-price__item-title {
+    margin-bottom: 30px
   }
   .s-price__btn-more {
     margin-top: 50px
