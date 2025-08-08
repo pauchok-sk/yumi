@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body">
+    @@include('html/components/header.html')
+    @@include('html/components/loader.html')
+    <main>
+      
+      @@include('html/components/s-archive-contacts.html')
+      <section class="s-about sect-m">
+        <div class="container">
+          <div class="s-about__slider-wrapper">
+            <div class="slider-btn _prev _linear">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+              </svg>
+            </div>
+            <div class="slider-btn _next _linear">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+              </svg>
+            </div>
+            <div class="swiper s-about__slider">
+              <div class="swiper-wrapper">
+                <a
+                  href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true"
+                  data-fancybox="about-gallery"
+                  class="swiper-slide s-about__slide _tr"
+                >
+                  <div class="btn-play">
+                    <svg>
+                      <use xlink:href='img/icons/icons.svg#icon-play'></use>
+                    </svg>
+                  </div>
+                  <img src="@img/about.jpg" alt="image" />
+                </a>
+                <a
+                  href="@img/about-2.jpg"
+                  data-fancybox="about-gallery"
+                  class="swiper-slide s-about__slide _tl _tr"
+                >
+                  <img src="@img/about-2.jpg" alt="image" />
+                </a>
+                <a
+                  href="@img/about-2.jpg"
+                  data-fancybox="about-gallery"
+                  class="swiper-slide s-about__slide _br"
+                >
+                  <img src="@img/about-2.jpg" alt="image" />
+                </a>
+                <a
+                  href="@img/about-2.jpg"
+                  data-fancybox="about-gallery"
+                  class="swiper-slide s-about__slide _bl"
+                >
+                  <img src="@img/about-2.jpg" alt="image" />
+                </a>
+                <a
+                  href="@img/about.jpg"
+                  data-fancybox="about-gallery"
+                  class="swiper-slide s-about__slide _tl"
+                >
+                  <img src="@img/about.jpg" alt="image" />
+                </a>
+                <a
+                  href="@img/about-2.jpg"
+                  data-fancybox="about-gallery"
+                  class="swiper-slide s-about__slide"
+                >
+                  <img src="@img/about-2.jpg" alt="image" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('html/components/s-connect.html')
+
+    </main>
+    @@include('html/components/footer.html')
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

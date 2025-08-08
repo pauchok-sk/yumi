@@ -364,7 +364,7 @@ img {
   font-size: 16px;
   line-height: 120%;
   text-align: center;
-  transition: color .5s ease,background-color .5s ease
+  transition: color .5s ease,background-color .5s ease,border-color .5s ease
 }
 .btn-s._active {
   background-color: var(--primary);
@@ -376,6 +376,10 @@ img {
 }
 .btn-s._satin {
   background-color: var(--satin)
+}
+.btn-s._outline {
+  background-color: rgba(0,0,0,0);
+  border: 1px solid var(--dark)
 }
 .list {
   padding-left: 0;
@@ -2104,6 +2108,73 @@ img {
   bottom: 0;
   z-index: -1
 }
+.s-archive-contacts {
+  position: relative;
+  z-index: 1
+}
+.s-archive-contacts__bg {
+  position: absolute;
+  width: 730px;
+  display: block;
+  left: -105px;
+  bottom: 95px;
+  z-index: -1
+}
+.s-archive-contacts__grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 60px;
+  row-gap: 70px;
+  max-width: calc(100% - 456px);
+  margin-left: auto
+}
+.s-archive-contacts__buttons {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 60px;
+  row-gap: 30px;
+  max-width: calc(100% - 456px);
+  margin-left: auto;
+  margin-top: 70px
+}
+.s-archive-contacts__item a {
+  transition: opacity .5s ease
+}
+.s-archive-contacts__item-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  opacity: .5;
+  margin: 0 0 20px 0
+}
+.s-archive-contacts__tel {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 145%
+}
+.s-archive-contacts__item-social {
+  display: flex;
+  gap: 25px
+}
+.s-archive-contacts__social-btn {
+  width: 25px;
+  height: 25px
+}
+.s-archive-contacts__social-btn svg {
+  width: 100%;
+  height: 100%
+}
+.s-archive-contacts__content {
+  font-size: 20px;
+  line-height: 145%
+}
+.s-archive-contacts__map {
+  width: 100%;
+  height: 550px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 70px
+}
 .footer {
   background-color: var(--dark);
   color: var(--white)
@@ -2404,6 +2475,15 @@ img {
   .s-archive-services__grid {
     gap: 40px
   }
+  .s-archive-contacts__grid {
+    margin-left: 0;
+    max-width: none
+  }
+  .s-archive-contacts__buttons {
+    margin-left: 0;
+    max-width: none;
+    gap: 30px
+  }
   .footer {
     padding: 60px 0
   }
@@ -2567,6 +2647,15 @@ img {
   }
   .s-profile__form-item:not(:first-child) {
     padding-top: 50px
+  }
+  .s-archive-contacts__grid {
+    gap: 40px
+  }
+  .s-archive-contacts__tel {
+    font-size: 24px
+  }
+  .s-archive-contacts__content {
+    font-size: 18px
   }
 }
 @media (max-width:991px) {
@@ -2767,6 +2856,13 @@ img {
   }
   .s-profile__img {
     width: 400px
+  }
+  .s-archive-contacts__buttons {
+    margin-top: 50px
+  }
+  .s-archive-contacts__map {
+    height: 400px;
+    margin-top: 50px
   }
   .footer__nav {
     margin-top: 50px
@@ -2985,6 +3081,19 @@ img {
   .s-profile__form-submit {
     margin-top: 30px
   }
+  .s-archive-contacts__grid {
+    grid-template-columns: repeat(2,1fr)
+  }
+  .s-archive-contacts__buttons {
+    margin-top: 30px;
+    grid-template-columns: repeat(2,1fr)
+  }
+  .s-archive-contacts__item._none {
+    display: none
+  }
+  .s-archive-contacts__map {
+    margin-top: 40px
+  }
   .footer__logo {
     width: 200px
   }
@@ -3139,6 +3248,14 @@ img {
     position: static;
     margin-top: 20px
   }
+  .s-archive-contacts__grid {
+    grid-template-columns: 1fr;
+    gap: 30px
+  }
+  .s-archive-contacts__buttons {
+    grid-template-columns: 1fr;
+    gap: 20px
+  }
   .footer__wrapper {
     text-align: center
   }
@@ -3217,6 +3334,11 @@ img {
   .btn-s._satin:hover {
     background-color: var(--primary);
     color: var(--white)
+  }
+  .btn-s._outline:hover {
+    background-color: var(--satin);
+    border-color: var(--satin);
+    color: var(--dark)
   }
   .slider-btn:hover {
     background-color: #4f4b48
@@ -3321,6 +3443,9 @@ img {
   .s-faq__spoller-btn:hover svg {
     color: var(--white)
   }
+  .s-archive-contacts__item a:hover {
+    opacity: .7
+  }
   .footer__wrapper a:hover {
     opacity: .7
   }
@@ -3362,6 +3487,11 @@ img {
   .btn-s._satin:active {
     background-color: var(--primary);
     color: var(--white)
+  }
+  .btn-s._outline:active {
+    background-color: var(--satin);
+    border-color: var(--satin);
+    color: var(--dark)
   }
   .slider-btn:active {
     background-color: #4f4b48
@@ -3465,6 +3595,9 @@ img {
   }
   .s-faq__spoller-btn:active svg {
     color: var(--white)
+  }
+  .s-archive-contacts__item a:active {
+    opacity: .7
   }
   .footer__wrapper a:active {
     opacity: .7

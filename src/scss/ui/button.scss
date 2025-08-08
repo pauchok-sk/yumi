@@ -149,7 +149,8 @@
 
   transition:
     color 0.5s ease,
-    background-color 0.5s ease;
+    background-color 0.5s ease,
+    border-color 0.5s ease;
 
   @include hover {
     background-color: var(--primary);
@@ -177,6 +178,17 @@
     @include hover {
       background-color: var(--primary);
       color: var(--white);
+    }
+  }
+
+  &._outline {
+    background-color: transparent;
+    border: 1px solid var(--dark);
+
+    @include hover {
+      background-color: var(--satin);
+      border-color: var(--satin);
+      color: var(--dark);
     }
   }
 }
